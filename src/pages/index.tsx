@@ -1,10 +1,14 @@
-import Container from "../components/container";
+import Head from "next/head"
+
+import Layout from "../components/layout"
 
 const Index = () => {
     return (
-        <Container>
-
-        </Container>
+        <Layout>
+            <Head>
+                <title>StepBroBD</title>
+            </Head>
+        </Layout>
     )
 }
 
