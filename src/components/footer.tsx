@@ -9,8 +9,7 @@ const Footer: FunctionComponent = () => {
             <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
                 <Link href="/">
                     <a className="flex title-font items-center md:justify-start justify-center">
-                        <Image src="/favicons/favicon-32x32.png" width={32} height={32} alt="StepBroBD"/>
-                        <span className="ml-3 text-xl">StepBroBD</span>
+                        <Image src="/favicons/favicon-96x96.png" width={32} height={32} alt="StepBroBD"/>
                     </a>
                 </Link>
 
