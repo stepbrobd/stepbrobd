@@ -2,7 +2,7 @@ import {FunctionComponent} from "react"
 
 const Header: FunctionComponent = () => {
     return (
-        <header className="">
+        <header className="border-b-2 border-neutral-700">
 
         </header>
     )
