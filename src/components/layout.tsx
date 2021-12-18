@@ -12,13 +12,10 @@ const Layout: FunctionComponent = ({children}: Props) => {
     return (
         <>
             <Meta/>
-
             <Header/>
-
             <main>
                 {children}
             </main>
-
             <Footer/>
         </>
     )
