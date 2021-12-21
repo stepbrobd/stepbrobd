@@ -6,24 +6,24 @@ import {FunctionComponent} from "react"
 const Footer: FunctionComponent = () => {
     return (
         <footer className="border-t-2 border-neutral-700">
-            <div className="container flex flex-row items-center mx-auto px-5 pt-5 pb-4">
+            <div className="container flex flex-row items-center mx-auto pt-5 pb-4 sm:px-5 px-0">
                 <div
-                    className="container flex flex-col sm:flex-row items-center border-neutral-700"> {/* footer - left side */}
+                    className="container flex flex-col sm:flex-row sm:items-center items-start sm:pl-0 pl-5"> {/* footer - left side */}
                     <Link href="/">
                         <a className="flex justify-center items-center">
                             <Image src="/favicons/favicon-96x96.png" width={32} height={32} alt="StepBroBD"/>
                         </a>
                     </Link>
                     <Link href="mailto:Hi@StepBroBD.com?subject=Hi!">
-                        <a className="text-m border-neutral-700 sm:ml-5 sm:pl-5 sm:border-l-2 sm:py-2">
+                        <a className="text-m border-neutral-700 sm:ml-5 sm:pl-5 sm:border-l-2 sm:py-2 sm:mt-0 mt-4">
                             <span>Hi@StepBroBD.com</span>
                         </a>
                     </Link>
                 </div>
 
                 <div
-                    className="container flex flex-col sm:flex-row items-center border-neutral-700"> {/* footer - right side */}
-                    <span className="inline-flex justify-center sm:ml-auto">
+                    className="container flex flex-col sm:flex-row sm:items-center items-end sm:pr-0 pr-5 border-neutral-700 sm:border-l-0 border-l-2"> {/* footer - right side */}
+                    <span className="inline-flex justify-center sm:ml-auto sm:mt-0 mt-4">
                         <Link href="https://github.com/StepBroBD">
                             <a className="ml-3" target="_blank">
                                 <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round"
@@ -60,7 +60,7 @@ const Footer: FunctionComponent = () => {
                             </a>
                         </Link>
                     </span>
-                    <div className="text-m border-neutral-700 sm:ml-5 sm:pl-5 sm:border-l-2 sm:py-2">
+                    <div className="text-m border-neutral-700 sm:ml-5 sm:pl-5 sm:border-l-2 sm:py-2 sm:mt-0 mt-3">
                         <Link
                             href="https://opensea.io/assets/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/42303080142962679593185109697494649809117032969304814184272812681325690219089">
                             <a target="_blank">&copy; Nov. 30, 2056.</a>
