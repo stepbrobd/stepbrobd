@@ -197,3 +197,6 @@ Temporary Items
 
 ### GPG template
 secring.*
+
+### Vercel
+.vercel
