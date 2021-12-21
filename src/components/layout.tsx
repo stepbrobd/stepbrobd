@@ -13,7 +13,7 @@ const Layout: FunctionComponent = ({children}: Props) => {
         <>
             <Meta/>
             <Header/>
-            <main>
+            <main className="px-5 py-10">
                 {children}
             </main>
             <Footer/>
