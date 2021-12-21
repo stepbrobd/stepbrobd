@@ -15,7 +15,7 @@ const Footer: FunctionComponent = () => {
                         </a>
                     </Link>
                     <Link href="mailto:Hi@StepBroBD.com?subject=Hi!">
-                        <a className="text-m border-neutral-700 sm:ml-5 sm:pl-5 sm:border-l-2 sm:py-2 sm:mt-0 mt-4">
+                        <a className="text-m border-neutral-700 sm:ml-5 sm:pl-5 sm:border-l-2 sm:py-2 sm:mt-0 mt-3">
                             <span>Hi@StepBroBD.com</span>
                         </a>
                     </Link>
@@ -60,7 +60,7 @@ const Footer: FunctionComponent = () => {
                             </a>
                         </Link>
                     </span>
-                    <div className="text-m border-neutral-700 sm:ml-5 sm:pl-5 sm:border-l-2 sm:py-2 sm:mt-0 mt-5">
+                    <div className="text-m border-neutral-700 sm:ml-5 sm:pl-5 sm:border-l-2 sm:py-2 sm:mt-0 mt-4">
                         <Link
                             href="https://opensea.io/assets/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/42303080142962679593185109697494649809117032969304814184272812681325690219089">
                             <a target="_blank">&copy; Nov. 30, 2056.</a>
