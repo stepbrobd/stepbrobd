@@ -5,7 +5,7 @@ import {FunctionComponent} from "react"
 
 const Footer: FunctionComponent = () => {
     return (
-        <footer className="border-t-2 border-neutral-700">
+        <footer className="border-neutral-800 border-y-[1px]">
             <div className="container flex flex-row items-center mx-auto pt-5 pb-4 sm:px-5 px-0">
                 <div
                     className="container flex flex-col sm:flex-row sm:items-center items-start sm:pl-0 pl-5"> {/* footer - left side */}
@@ -15,14 +15,14 @@ const Footer: FunctionComponent = () => {
                         </a>
                     </Link>
                     <Link href="mailto:Hi@StepBroBD.com?subject=Hi!">
-                        <a className="text-m border-neutral-700 sm:ml-5 sm:pl-5 sm:border-l-2 sm:py-2 sm:mt-0 mt-3">
+                        <a className="text-m border-neutral-800 sm:ml-5 sm:pl-5 sm:border-l-[1px] sm:py-2 sm:mt-0 mt-3">
                             <span>Hi@StepBroBD.com</span>
                         </a>
                     </Link>
                 </div>
 
                 <div
-                    className="container flex flex-col sm:flex-row sm:items-center items-end sm:pr-0 pr-5 border-neutral-700 sm:border-l-0 border-l-2"> {/* footer - right side */}
+                    className="container flex flex-col sm:flex-row sm:items-center items-end sm:pr-0 pr-5 border-neutral-800 sm:border-l-0 border-l-[1px]"> {/* footer - right side */}
                     <span className="inline-flex justify-center sm:ml-auto sm:mt-0 mt-2">
                         <Link href="https://github.com/StepBroBD">
                             <a className="ml-3" target="_blank">
@@ -60,7 +60,7 @@ const Footer: FunctionComponent = () => {
                             </a>
                         </Link>
                     </span>
-                    <div className="text-m border-neutral-700 sm:ml-5 sm:pl-5 sm:border-l-2 sm:py-2 sm:mt-0 mt-4">
+                    <div className="text-m border-neutral-800 sm:ml-5 sm:pl-5 sm:border-l-[1px] sm:py-2 sm:mt-0 mt-4">
                         <Link
                             href="https://opensea.io/assets/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/42303080142962679593185109697494649809117032969304814184272812681325690219089">
                             <a target="_blank">&copy; Nov. 30, 2056.</a>
