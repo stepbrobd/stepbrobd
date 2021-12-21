@@ -10,7 +10,7 @@ const Footer: FunctionComponent = () => {
                 <div
                     className="container flex flex-col sm:flex-row sm:items-center items-start sm:pl-0 pl-5 sm:py-[2px]"> {/* footer - left side */}
                     <span
-                        className="flex inline-flex justify-center items-center sm:pt-[6px] pt-0 sm:pb-[2px] pb-0">
+                        className="flex inline-flex justify-center items-center sm:pt-[6px] pt-[4px] sm:pb-[2px] pb-0">
                         <Link href="/">
                             <a className="mr-3">
                                 <Image src="/favicons/favicon-96x96.png" width={22} height={22} alt="StepBroBD"/>
@@ -23,7 +23,7 @@ const Footer: FunctionComponent = () => {
                         </Link>
                     </span>
                     <span
-                        className="flex inline-flex justify-center items-center border-neutral-800 sm:pl-5 sm:border-l-[1px] sm:py-2 pt-3">
+                        className="flex inline-flex justify-center items-center border-neutral-800 sm:pl-5 sm:border-l-[1px] sm:py-2 py-[4px] pt-3">
                         <Link href="https://github.com/StepBroBD">
                             <a className="mr-3" target="_blank">
                                 <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round"
@@ -68,7 +68,7 @@ const Footer: FunctionComponent = () => {
                             <span>Hi@StepBroBD.com</span>
                         </a>
                     </Link>
-                    <div className="text-l sm:ml-5 sm:pl-5 border-neutral-800 sm:border-l-[1px] sm:py-2 pt-[12px]">
+                    <div className="text-l sm:ml-5 sm:pl-5 border-neutral-800 sm:border-l-[1px] sm:py-2 pt-[20px]">
                         <Link
                             href="https://opensea.io/assets/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/42303080142962679593185109697494649809117032969304814184272812681325690219089">
                             <a target="_blank">&copy; Nov. 30, 2056 A.D.</a>
