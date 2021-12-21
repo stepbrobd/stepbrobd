@@ -8,24 +8,24 @@ const Footer: FunctionComponent = () => {
         <footer className="border-neutral-800 border-y-[1px]">
             <div className="container flex flex-row items-center mx-auto pt-5 pb-4 sm:px-5 px-0">
                 <div
-                    className="container flex flex-col sm:flex-row sm:items-center items-start sm:pl-0 pl-5"> {/* footer - left side */}
-                    <Link href="/">
-                        <a className="flex justify-center items-center">
-                            <Image src="/favicons/favicon-96x96.png" width={32} height={32} alt="StepBroBD"/>
-                        </a>
-                    </Link>
-                    <Link href="mailto:Hi@StepBroBD.com?subject=Hi!">
-                        <a className="text-m border-neutral-800 sm:ml-5 sm:pl-5 sm:border-l-[1px] sm:py-2 sm:mt-0 mt-3">
-                            <span>Hi@StepBroBD.com</span>
-                        </a>
-                    </Link>
-                </div>
-
-                <div
-                    className="container flex flex-col sm:flex-row sm:items-center items-end sm:pr-0 pr-5 border-neutral-800 sm:border-l-0 border-l-[1px]"> {/* footer - right side */}
-                    <span className="inline-flex justify-center sm:ml-auto sm:mt-0 mt-2">
+                    className="container flex flex-col sm:flex-row sm:items-center items-start sm:pl-0 pl-5 sm:py-[2px]"> {/* footer - left side */}
+                    <span
+                        className="flex inline-flex justify-center items-center sm:pt-[6px] pt-0">
+                        <Link href="/">
+                            <a className="sm:mr-3 mr-2">
+                                <Image src="/favicons/favicon-96x96.png" width={24} height={24} alt="StepBroBD"/>
+                            </a>
+                        </Link>
+                        <Link href="https://opensea.io/StepBroBD">
+                            <a className="mr-3" target="_blank">
+                                <Image src="/ethereum.png" width={24} height={24} alt="StepBroBD"/>
+                            </a>
+                        </Link>
+                    </span>
+                    <span
+                        className="flex inline-flex justify-center items-center border-neutral-800 sm:pl-5 sm:border-l-[1px] sm:py-2 pt-3">
                         <Link href="https://github.com/StepBroBD">
-                            <a className="ml-3" target="_blank">
+                            <a className="mr-3" target="_blank">
                                 <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round"
                                      strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                                     <path
@@ -34,7 +34,7 @@ const Footer: FunctionComponent = () => {
                         </a>
                         </Link>
                         <Link href="https://twitter.com/StepBroBD">
-                            <a className="ml-3" target="_blank">
+                            <a className="mr-3" target="_blank">
                                 <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                      className="w-5 h-5" viewBox="0 0 24 24">
                                     <path
@@ -43,7 +43,7 @@ const Footer: FunctionComponent = () => {
                             </a>
                         </Link>
                         <Link href="https://www.reddit.com/user/StepBroBD">
-                            <a className="ml-3" target="_blank">
+                            <a className="mr-3" target="_blank">
                                 <svg fill="currentColor" stroke="none" strokeLinecap="round" strokeLinejoin="round"
                                      strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                                     <path
@@ -51,7 +51,7 @@ const Footer: FunctionComponent = () => {
                             </a>
                         </Link>
                         <Link href="https://discordapp.com/users/664337668842192899">
-                            <a className="ml-3" target="_blank">
+                            <a className="mr-3" target="_blank">
                                 <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round"
                                      strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                                     <path
@@ -60,10 +60,18 @@ const Footer: FunctionComponent = () => {
                             </a>
                         </Link>
                     </span>
-                    <div className="text-m border-neutral-800 sm:ml-5 sm:pl-5 sm:border-l-[1px] sm:py-2 sm:mt-0 mt-4">
+                </div>
+                <div
+                    className="container flex flex-col sm:flex-row sm:items-center items-end justify-end sm:pr-0 pr-5 border-neutral-800 border-l-[1px] whitespace-nowrap"> {/* footer - right side */}
+                    <Link href="mailto:Hi@StepBroBD.com?subject=Hi!">
+                        <a className="text-m sm:ml-3 sm:pl-3">
+                            <span>Hi@StepBroBD.com</span>
+                        </a>
+                    </Link>
+                    <div className="text-m sm:ml-5 sm:pl-5 border-neutral-800 sm:border-l-[1px] sm:py-2 pt-[14px]">
                         <Link
                             href="https://opensea.io/assets/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/42303080142962679593185109697494649809117032969304814184272812681325690219089">
-                            <a target="_blank">&copy; Nov. 30, 2056.</a>
+                            <a target="_blank">&copy; Nov. 30, 2056 A.D.</a>
                         </Link>
                     </div>
                 </div>
