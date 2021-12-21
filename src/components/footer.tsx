@@ -23,7 +23,7 @@ const Footer: FunctionComponent = () => {
 
                 <div
                     className="container flex flex-col sm:flex-row sm:items-center items-end sm:pr-0 pr-5 border-neutral-700 sm:border-l-0 border-l-2"> {/* footer - right side */}
-                    <span className="inline-flex justify-center sm:ml-auto sm:mt-0 mt-4">
+                    <span className="inline-flex justify-center sm:ml-auto sm:mt-0 mt-2">
                         <Link href="https://github.com/StepBroBD">
                             <a className="ml-3" target="_blank">
                                 <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round"
@@ -60,7 +60,7 @@ const Footer: FunctionComponent = () => {
                             </a>
                         </Link>
                     </span>
-                    <div className="text-m border-neutral-700 sm:ml-5 sm:pl-5 sm:border-l-2 sm:py-2 sm:mt-0 mt-3">
+                    <div className="text-m border-neutral-700 sm:ml-5 sm:pl-5 sm:border-l-2 sm:py-2 sm:mt-0 mt-5">
                         <Link
                             href="https://opensea.io/assets/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/42303080142962679593185109697494649809117032969304814184272812681325690219089">
                             <a target="_blank">&copy; Nov. 30, 2056.</a>
