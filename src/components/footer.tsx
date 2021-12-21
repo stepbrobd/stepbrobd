@@ -64,11 +64,11 @@ const Footer: FunctionComponent = () => {
                 <div
                     className="container flex flex-col sm:flex-row sm:items-center items-end justify-end sm:pr-0 pr-5 border-neutral-800 border-l-[1px] whitespace-nowrap"> {/* footer - right side */}
                     <Link href="mailto:Hi@StepBroBD.com?subject=Hi!">
-                        <a className="text-m sm:ml-3 sm:pl-3">
+                        <a className="font-bold text-l sm:ml-3 sm:pl-3">
                             <span>Hi@StepBroBD.com</span>
                         </a>
                     </Link>
-                    <div className="text-m sm:ml-5 sm:pl-5 border-neutral-800 sm:border-l-[1px] sm:py-2 pt-[12px]">
+                    <div className="font-bold text-l sm:ml-5 sm:pl-5 border-neutral-800 sm:border-l-[1px] sm:py-2 pt-[12px]">
                         <Link
                             href="https://opensea.io/assets/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/42303080142962679593185109697494649809117032969304814184272812681325690219089">
                             <a target="_blank">&copy; Nov. 30, 2056 A.D.</a>
