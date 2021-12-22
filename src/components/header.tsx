@@ -18,12 +18,12 @@ const Header: FunctionComponent = () => {
                     <span
                         className="flex inline-flex justify-center items-center sm:pt-[6px] pt-[2px] sm:pb-[2px] pb-0">
                         <Link href="/">
-                            <a className="mr-3">
+                            <a className="mr-2.5">
                                 <Image src="/favicons/favicon-96x96.png" width={22} height={22} alt="StepBroBD"/>
                             </a>
                         </Link>
                         <Link href="/gpg">
-                            <a className="mr-2.5">
+                            <a className="mr-3">
                                 <Image src="/gpg.png" width={20} height={22} alt="StepBroBD"/>
                             </a>
                         </Link>
