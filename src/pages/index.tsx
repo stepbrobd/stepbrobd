@@ -8,6 +8,8 @@ const Index = () => {
             <Head>
                 <title>StepBroBD</title>
             </Head>
+
+
         </Layout>
     )
 }
