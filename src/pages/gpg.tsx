@@ -15,7 +15,7 @@ const GPG = () => {
                 </Link>
             </div>
             <code
-                className="text-center block whitespace-pre overflow-x-scroll overflow-y-scroll sm:h-[750px] h-[450px] py-3">
+                className="text-center block whitespace-pre overflow-x-scroll overflow-y-scroll sm:h-[750px] h-[600px] py-3">
                 -----BEGIN PGP PUBLIC KEY BLOCK----- <br/>
                 <br/>
                 mQINBGGVsqcBEADk31meV9YH3J0auU9V6IG07oNW3WBOn9pLCaqOthWgdwG/H8yb<br/>
