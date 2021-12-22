@@ -14,7 +14,7 @@ const Layout: FunctionComponent = ({children}: Props) => {
             <Meta/>
             <div className="selection:bg-yellow-500">
                 <Header/>
-                <main className="px-5 py-10 px-20">
+                <main className="px-8 py-10">
                     {children}
                 </main>
                 <Footer/>
