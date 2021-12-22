@@ -1,5 +1,5 @@
 {
-  "name": "stepbrobd-com",
+  "name": "com-stepbrobd",
   "private": true,
   "scripts": {
     "dev": "next dev",
