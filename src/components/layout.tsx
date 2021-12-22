@@ -12,11 +12,13 @@ const Layout: FunctionComponent = ({children}: Props) => {
     return (
         <>
             <Meta/>
-            <Header/>
-            <main className="px-5 py-10">
-                {children}
-            </main>
-            <Footer/>
+            <div className="selection:bg-yellow-500">
+                <Header/>
+                <main className="px-5 py-10 px-20">
+                    {children}
+                </main>
+                <Footer/>
+            </div>
         </>
     )
 }
