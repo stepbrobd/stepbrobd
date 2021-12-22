@@ -6,7 +6,7 @@ import Image from "next/image";
 const Header: FunctionComponent = () => {
     return (
         <header className="border-neutral-800 border-y-[1px]">
-            <div className="container flex flex-row items-center mx-auto px-5 py-3">
+            <div className="container flex flex-row items-center mx-auto px-5 py-1.5">
                 <div className="container flex-row items-start items-start">
                     <Link href="/">
                         <a className="font-bold tracking-tighter text-2xl underline decoration-dashed">
