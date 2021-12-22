@@ -16,14 +16,24 @@ const Footer: FunctionComponent = () => {
                                 <Image src="/favicons/favicon-96x96.png" width={22} height={22} alt="StepBroBD"/>
                             </a>
                         </Link>
+                        <Link href="/gpg">
+                            <a className="mr-2.5">
+                                <Image src="/gpg.png" width={20} height={22} alt="StepBroBD"/>
+                            </a>
+                        </Link>
+                        <Link href="https://www.npmjs.com/~stepbrobd">
+                            <a className="mr-3.5 invert-[0.7]" target="_blank">
+                                <Image src="/npm.png" width={20} height={22} alt="StepBroBD"/>
+                            </a>
+                        </Link>
                         <Link href="https://opensea.io/StepBroBD">
                             <a className="mr-3" target="_blank">
-                                <Image src="/ethereum.png" width={18} height={22} alt="StepBroBD"/>
+                                <Image src="/ethereum.png" width={17} height={20} alt="StepBroBD"/>
                             </a>
                         </Link>
                     </span>
                     <span
-                        className="flex inline-flex justify-center items-center border-neutral-800 sm:pl-5 sm:border-l-[1px] sm:py-2 py-[4px] pt-3">
+                        className="flex inline-flex justify-center items-center border-neutral-800 sm:ml-3 sm:pl-6 sm:border-l-[1px] sm:py-2 py-[4px] pt-3">
                         <Link href="https://github.com/StepBroBD">
                             <a className="mr-3" target="_blank">
                                 <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round"
