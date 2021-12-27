@@ -90,4 +90,4 @@ const Footer: FunctionComponent = () => {
     )
 }
 
-export default Footer
+export {Footer}

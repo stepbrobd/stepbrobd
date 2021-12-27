@@ -1,7 +1,7 @@
 import Head from "next/head"
 import Image from "next/image"
 
-import Layout from "../components/layout"
+import {Layout} from "../components/components"
 
 const Index = () => {
     return (
@@ -10,7 +10,8 @@ const Index = () => {
                 <title>StepBroBD</title>
             </Head>
             <div className="flex justify-center items-center">
-                <Image src="/status/501.jpg" width={750} height={600} alt="501 Not Implemented"/>
+                <Image src="https://static.stepbrobd.com/status/501.jpg" width={750} height={600}
+                       alt="501 Not Implemented"/>
             </div>
         </Layout>
     )

@@ -1,8 +1,6 @@
 import {FunctionComponent, ReactNode} from "react"
 
-import Meta from "./meta"
-import Header from "./header"
-import Footer from "./footer"
+import {Footer, Header, Meta} from "./components"
 
 type Props = {
     children?: ReactNode
@@ -23,4 +21,4 @@ const Layout: FunctionComponent = ({children}: Props) => {
     )
 }
 
-export default Layout
+export {Layout}

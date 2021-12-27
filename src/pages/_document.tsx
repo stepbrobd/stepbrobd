@@ -8,7 +8,8 @@ const Document = () => {
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
                 <link rel="preconnect" href="https://vitals.vercel-insights.com" crossOrigin="true"/>
-                <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+                <link rel="preconnect" href="https://static.stepbrobd.com" crossOrigin="anonymous"/>
+                <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"/>
             </Head>
             <body>
             <Main/>
