@@ -27,16 +27,15 @@ const Meta = () => {
             <link rel="icon" type="image/png" sizes="144x144" href="https://static.stepbrobd.com/favicons/android-icon-144x144.png"/>
             <link rel="icon" type="image/png" sizes="192x192" href="https://static.stepbrobd.com/favicons/android-icon-192x192.png"/>
 
-            <meta name="msapplication-config" content="/favicons/browserconfig.xml"/>
             <meta name="msapplication-TileColor" content="#000000"/>
-            <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png"/>
+            <meta name="msapplication-config" content="https://static.stepbrobd.com/favicons/browserconfig.xml"/>
+            <meta name="msapplication-TileImage" content="https://static.stepbrobd.com/favicons/ms-icon-144x144.png"/>
 
-            <link rel="manifest" href="/favicons/manifest.json"/>
+            <link rel="manifest" href="https://static.stepbrobd.com/favicons/manifest.json"/>
 
             <meta name="theme-color" content="#000000"/>
 
-            <meta name="description" content="StepBroBD"/>
-            <meta property="og:image" content="/og.png"/>
+            <meta property="og:image" content="https://static.stepbrobd.com/og/banner.png"/>
         </Head>
     )
 }
