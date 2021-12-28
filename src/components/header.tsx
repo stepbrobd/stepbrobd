@@ -1,45 +1,58 @@
-import Link from "next/link"
-import Image from "next/image"
-
 import {FunctionComponent} from "react"
+
+const header = {
+    links: [
+        {
+            name: "About",
+            href: "/about",
+        },
+        {
+            name: "Blog",
+            href: "/blog",
+        },
+    ],
+}
 
 const Header: FunctionComponent = () => {
     return (
-        <header className="border-neutral-800 border-y-[1px]">
-            <div className="container flex flex-row items-center mx-auto px-5 py-1.5">
-                <div className="container flex-row items-start items-start">
-                    <Link href="/">
-                        <a className="font-bold tracking-tighter text-2xl">
-                            <span>StepBroBD</span>
+        <header className="border-neutral-800 border-b-[1px]">
+            <nav className="max-w-7xl mx-auto px-6">
+                <div
+                    className="w-full py-4 flex items-center justify-between">
+                    <div className="flex items-center">
+                        <a href="#">
+                            <span className="sr-only">StepBroBD</span>
+                            <img
+                                className="h-10 w-auto"
+                                src="https://static.stepbrobd.com/og/circular.png"
+                                alt="StepBroBD"
+                            />
                         </a>
-                    </Link>
+                    </div>
+                    <div className="space-x-4">
+                        {
+                            header.links.map((link) => (
+                                link.href.startsWith("https://")
+                                    ? <a key={link.name}
+                                         href={link.href}
+                                         className="font-medium"
+                                         target="_blank"
+                                         rel="noreferrer"
+                                    >
+                                        {link.name}&#x2197;
+                                    </a>
+                                    : <a
+                                        key={link.name}
+                                        href={link.href}
+                                        className="font-medium"
+                                    >
+                                        {link.name}
+                                    </a>
+                            ))
+                        }
+                    </div>
                 </div>
-                <div className="container flex flex-row items-end justify-end pt-[5px]">
-                    <span
-                        className="flex inline-flex justify-center items-center sm:pt-[6px] pt-[2px] sm:pb-[2px] pb-0">
-                        <Link href="/">
-                            <a className="mr-2.5">
-                                <Image src="/favicons/favicon-96x96.png" width={22} height={22} alt="StepBroBD"/>
-                            </a>
-                        </Link>
-                        <Link href="/gpg">
-                            <a className="mr-3">
-                                <Image src="/gpg.png" width={20} height={22} alt="StepBroBD"/>
-                            </a>
-                        </Link>
-                        <Link href="https://www.npmjs.com/~stepbrobd">
-                            <a className="mr-3.5 invert-[0.7]" target="_blank">
-                                <Image src="/npm.png" width={20} height={22} alt="StepBroBD"/>
-                            </a>
-                        </Link>
-                        <Link href="https://opensea.io/StepBroBD">
-                            <a target="_blank">
-                                <Image src="/ethereum.png" width={17} height={20} alt="StepBroBD"/>
-                            </a>
-                        </Link>
-                    </span>
-                </div>
-            </div>
+            </nav>
         </header>
     )
 }
