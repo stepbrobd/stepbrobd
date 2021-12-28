@@ -1,5 +1,3 @@
-import type {FunctionComponent} from "react"
-
 const header = {
     links: [
         {
@@ -13,7 +11,7 @@ const header = {
     ],
 }
 
-const Header: FunctionComponent = () => {
+const Header = () => {
     return (
         <header className="border-neutral-800 border-b-[1px]">
             <nav className="max-w-7xl mx-auto px-6">

@@ -1,4 +1,4 @@
-import type {FunctionComponent, SVGProps} from "react"
+import type {SVGProps} from "react"
 
 const footer = {
     links: [
@@ -69,7 +69,7 @@ const footer = {
     copyright: <>&copy; Nov. 30, 2056 A.D.</>
 }
 
-const Footer: FunctionComponent = () => {
+const Footer = () => {
     return (
         <footer className="border-neutral-800 border-t-[1px]">
             <div className="max-w-7xl mx-auto pt-8 pb-5 px-4 overflow-hidden sm:px-6 lg:px-8">
