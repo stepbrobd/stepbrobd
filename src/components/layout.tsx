@@ -1,16 +1,24 @@
-import type {FunctionComponent, ReactNode} from "react"
+import type {ReactNode} from "react"
+
+import Head from "next/head"
 
 import {Footer, Header, Meta} from "./components"
 
 type Props = {
+    title: string
+    description: string
     children?: ReactNode
 }
 
-const Layout: FunctionComponent = ({children}: Props) => {
+const Layout = ({title, description, children}: Props) => {
     return (
         <>
             <Meta/>
-            <div className="selection:bg-red-900">
+            <Head>
+                <title>{title}</title>
+                <meta name="description" content={description}/>
+            </Head>
+            <div className="selection:bg-yellow-400 selection:text-black">
                 <Header/>
                 <main className="px-6 py-6">
                     {children}
