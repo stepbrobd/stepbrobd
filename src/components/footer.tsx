@@ -1,4 +1,4 @@
-import {FunctionComponent, SVGProps} from "react"
+import type {FunctionComponent, SVGProps} from "react"
 
 const footer = {
     links: [
