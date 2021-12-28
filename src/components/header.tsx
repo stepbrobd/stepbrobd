@@ -18,7 +18,7 @@ const Header = () => {
                 <div
                     className="w-full py-4 flex items-center justify-between">
                     <div className="flex items-center">
-                        <a href="#">
+                        <a href="/">
                             <span className="sr-only">StepBroBD</span>
                             <img
                                 className="h-10 w-auto"
