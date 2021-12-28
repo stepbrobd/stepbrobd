@@ -1,7 +1,7 @@
 import {FunctionComponent, SVGProps} from "react"
 
 const footer = {
-    link: [
+    links: [
         {
             name: "About",
             href: "/about",
@@ -15,7 +15,7 @@ const footer = {
             href: "https://opensea.io/assets/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/42303080142962679593185109697494649809117032969304814184272812681325690219089",
         },
     ],
-    social: [
+    socials: [
         {
             name: "GitHub",
             href: "https://github.com/StepBroBD",
@@ -74,21 +74,21 @@ const Footer: FunctionComponent = () => {
         <footer className="border-neutral-800 border-t-[1px]">
             <div className="max-w-7xl mx-auto pt-8 pb-5 px-4 overflow-hidden sm:px-6 lg:px-8">
                 <nav className="-mx-5 -my-1.5 flex flex-wrap justify-center">
-                    {footer.link.map((item) => (
-                        <div key={item.name} className="px-5 py-2">
+                    {footer.links.map((link) => (
+                        <div key={link.name} className="px-5 py-2">
                             {
-                                item.href.startsWith("https://")
-                                    ? <a href={item.href} target="_blank" rel="noreferrer">{item.name}&#x2197;</a>
-                                    : <a href={item.href}>{item.name}</a>
+                                link.href.startsWith("https://")
+                                    ? <a href={link.href} target="_blank" rel="noreferrer">{link.name}&#x2197;</a>
+                                    : <a href={link.href}>{link.name}</a>
                             }
                         </div>
                     ))}
                 </nav>
                 <div className="mt-6 flex justify-center space-x-6">
-                    {footer.social.map((item) => (
-                        <a key={item.name} href={item.href} target="_blank" rel="noreferrer">
-                            <span className="sr-only">{item.name}</span>
-                            <item.icon className="h-6 w-6"/>
+                    {footer.socials.map((social) => (
+                        <a key={social.name} href={social.href} target="_blank" rel="noreferrer">
+                            <span className="sr-only">{social.name}</span>
+                            <social.icon className="h-6 w-6"/>
                         </a>
                     ))}
                 </div>
