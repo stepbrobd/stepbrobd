@@ -1,6 +1,11 @@
 import Head from "next/head"
 
-const Meta = () => {
+type Props = {
+    title: string
+    description: string
+}
+
+const Meta = ({title, description}: Props) => {
     return (
         <Head>
             <link rel="shortcut icon" type="image/x-icon" href="https://static.stepbrobd.com/favicons/favicon.ico"/>
@@ -36,6 +41,9 @@ const Meta = () => {
             <meta name="theme-color" content="#000000"/>
 
             <meta property="og:image" content="https://static.stepbrobd.com/og/banner.png"/>
+
+            <title>{title}</title>
+            <meta name="description" content={description}/>
         </Head>
     )
 }
