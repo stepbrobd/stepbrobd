@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 import type {SVGProps} from "react"
 
 const footer = {
@@ -78,18 +80,20 @@ const Footer = () => {
                         <div key={link.name} className="px-5 py-2">
                             {
                                 link.href.startsWith("https://")
-                                    ? <a href={link.href} target="_blank" rel="noreferrer">{link.name}&#x2197;</a>
-                                    : <a href={link.href}>{link.name}</a>
+                                    ? <Link href={link.href}><a target="_blank" rel="noreferrer">{link.name}&#x2197;</a></Link>
+                                    : <Link href={link.href}><a>{link.name}</a></Link>
                             }
                         </div>
                     ))}
                 </nav>
                 <div className="mt-6 flex justify-center space-x-6">
                     {footer.socials.map((social) => (
-                        <a key={social.name} href={social.href} target="_blank" rel="noreferrer">
-                            <span className="sr-only">{social.name}</span>
-                            <social.icon className="h-6 w-6"/>
-                        </a>
+                        <Link key={social.name} href={social.href}>
+                            <a target="_blank" rel="noreferrer">
+                                <span className="sr-only">{social.name}</span>
+                                <social.icon className="h-6 w-6"/>
+                            </a>
+                        </Link>
                     ))}
                 </div>
                 <p className="mt-5 text-center">{footer.copyright}</p>

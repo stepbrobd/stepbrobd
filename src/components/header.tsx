@@ -1,3 +1,6 @@
+import Link from "next/link"
+import Image from "next/image"
+
 const header = {
     links: [
         {
@@ -18,34 +21,47 @@ const Header = () => {
                 <div
                     className="w-full py-4 flex items-center justify-between">
                     <div className="flex items-center">
-                        <a href="/">
-                            <span className="sr-only">StepBroBD</span>
-                            <img
-                                className="h-10 w-auto"
-                                src="https://static.stepbrobd.com/og/circular.png"
-                                alt="StepBroBD"
-                            />
-                        </a>
+                        <Link href="/">
+                            <a>
+                                <span className="sr-only">StepBroBD</span>
+                                <span className="container flex justify-center items-center h-10 w-auto">
+                                    <Image
+                                        src="https://static.stepbrobd.com/og/circular.png"
+                                        height={30}
+                                        width={30}
+                                        loading="eager"
+                                        alt="StepBroBD"
+                                    />
+                                </span>
+                            </a>
+                        </Link>
                     </div>
                     <div className="space-x-4">
                         {
                             header.links.map((link) => (
                                 link.href.startsWith("https://")
-                                    ? <a key={link.name}
-                                         href={link.href}
-                                         className="font-medium"
-                                         target="_blank"
-                                         rel="noreferrer"
-                                    >
-                                        {link.name}&#x2197;
-                                    </a>
-                                    : <a
+                                    ? <Link
                                         key={link.name}
                                         href={link.href}
-                                        className="font-medium"
                                     >
-                                        {link.name}
-                                    </a>
+                                        <a
+                                            className="font-medium"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            {link.name}&#x2197;
+                                        </a>
+                                    </Link>
+                                    : <Link
+                                        key={link.name}
+                                        href={link.href}
+                                    >
+                                        <a
+                                            className="font-medium"
+                                        >
+                                            {link.name}
+                                        </a>
+                                    </Link>
                             ))
                         }
                     </div>
