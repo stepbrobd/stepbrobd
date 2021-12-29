@@ -16,7 +16,7 @@ const header = {
 
 const Header = () => {
     return (
-        <header className="sticky top-0 backdrop-filter backdrop-blur-md bg-opacity-50 border-neutral-800 border-b-[1px]">
+        <header className="sticky top-0 backdrop-filter backdrop-blur-sm bg-opacity-95 border-neutral-800 border-b-[1px]">
             <nav className="max-w-7xl mx-auto px-6">
                 <div
                     className="w-full py-4 flex items-center justify-between">
