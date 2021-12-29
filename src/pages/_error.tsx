@@ -1,4 +1,5 @@
-import {NextPageContext} from "next"
+import type {NextPageContext} from "next"
+
 import Image from "next/image"
 
 import {Layout, Meta} from "../components/components"
