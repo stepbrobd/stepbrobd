@@ -2,7 +2,7 @@ const header = {
     links: [
         {
             name: "About",
-            href: "/about",
+            href: "/",
         },
         {
             name: "Blog",

@@ -11,7 +11,11 @@ const Layout = ({children}: Props) => {
         <>
             <Header/>
             <div className="selection:bg-yellow-400 selection:text-black">
-                <main className="px-6 py-6">
+                <main className="mx-auto px-6 py-6
+                prose prose-invert
+                prose-h1:font-black
+                prose-pre:bg-neutral-900"
+                >
                     {children}
                 </main>
             </div>

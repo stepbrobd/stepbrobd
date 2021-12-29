@@ -1,14 +1,13 @@
 import {Layout, Meta} from "../../components/components"
 
-const BlogIndex = () => {
+const Index = () => {
     return (
         <>
             <Meta title="StepBroBD" description="StepBroBD homepage."/>
             <Layout>
-
             </Layout>
         </>
     )
 }
 
-export default BlogIndex
+export default Index
