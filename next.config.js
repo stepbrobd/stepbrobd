@@ -7,6 +7,12 @@ module.exports = withMDX({
         domains: ["static.stepbrobd.com"],
     },
     async redirects() {
-        return []
+        return [
+            {
+                source: '/about',
+                destination: '/',
+                permanent: true,
+            },
+        ]
     },
 })
