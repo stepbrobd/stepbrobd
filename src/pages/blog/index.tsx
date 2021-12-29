@@ -1,13 +1,16 @@
 import {Layout, Meta} from "../../components/components"
 
-const Index = () => {
+import MDXComponent from "../../mdx/blog/index.mdx"
+
+const BlogIndex = () => {
     return (
         <>
-            <Meta title="StepBroBD" description="StepBroBD homepage."/>
+            <Meta title="Blog | StepBroBD" description="StepBroBD blog."/>
             <Layout>
+                <MDXComponent/>
             </Layout>
         </>
     )
 }
 
-export default Index
+export default BlogIndex
