@@ -19,7 +19,7 @@ const Header = () => {
         <header className="sticky top-0 backdrop-filter backdrop-blur-sm bg-opacity-95 border-neutral-800 border-b-[1px]">
             <nav className="max-w-7xl mx-auto px-6">
                 <div
-                    className="w-full py-4 flex items-center justify-between">
+                    className="w-full py-2.5 flex items-center justify-between">
                     <div className="flex items-center">
                         <Link href="/">
                             <a>
