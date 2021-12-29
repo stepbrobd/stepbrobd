@@ -10,7 +10,7 @@ const Layout = ({children}: Props) => {
     return (
         <>
             <Header/>
-            <div className="selection:bg-yellow-400 selection:text-black">
+            <div className="mx-auto my-5 selection:bg-yellow-300 selection:text-black">
                 <main className="mx-auto px-6 py-6
                 prose prose-invert
                 prose-h1:font-black
