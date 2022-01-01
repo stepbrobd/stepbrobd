@@ -25,6 +25,7 @@
     "remark-html": "^15.0.1"
   },
   "devDependencies": {
+    "@types/gtag.js": "^0.0.8",
     "@types/react": "^17.0.38",
     "eslint": "8.4.1",
     "eslint-config-next": "12.0.7",
