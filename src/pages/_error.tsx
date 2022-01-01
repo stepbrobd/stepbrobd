@@ -11,7 +11,7 @@ type Props = {
 const Error = ({statusCode}: Props) => {
     return (
         <>
-            <Meta title={statusCode + " | StepBroBD"} description={"An error with status " + statusCode + " occurred."}/>
+            <Meta title={statusCode + " - StepBroBD"} description={"An error with status " + statusCode + " occurred."}/>
             <Layout>
                 <div className="not-prose flex flex-col justify-center items-center">
                     <h1 className="font-black text-3xl pt-8 pb-4">Oops...</h1>
