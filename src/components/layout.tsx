@@ -1,6 +1,6 @@
 import type {ReactNode} from "react"
 
-import {Footer, Header} from "./"
+import {Footer, Header} from "components"
 
 type Props = {
     children?: ReactNode
