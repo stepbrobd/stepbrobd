@@ -1,0 +1,39 @@
+# Hostmaster
+
+Hostmaster Blog for *.StepBroBD.com.
+
+## DNS
+
+### A & AAAA Records
+
+- ams.server.stepbrobd.com -> 89.233.107.67
+- ams.server.stepbrobd.com -> 2602:FF16:9:0:1:18A:0:1
+
+- jfk.server.stepbrobd.com -> 208.87.134.132
+- jfk.server.stepbrobd.com -> 2602:FF16:3:0:1:247:0:1
+
+## Services
+
+All services are running in Docker Containers.
+
+## Overview
+
+Server ams.server.stepbrobd.com - Docker Swarm Slave.
+Server jfk.server.stepbrobd.com - Docker Swarm Master.
+
+### Volumes
+
+- nginx (`sudo docker volume create nginx`)
+
+
+### Nginx
+
+```shell
+sudo docker run \
+-d              \
+--name nginx    \
+--restart always\
+-v nginx:/
+-p 80:80 443:443\
+nginx:stable
+```

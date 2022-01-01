@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import {Layout, Meta} from "../components/components"
+import {Layout, Meta} from "../components"
 
 const Error = () => {
     return (

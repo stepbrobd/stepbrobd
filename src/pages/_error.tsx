@@ -2,7 +2,7 @@ import type {NextPageContext} from "next"
 
 import Image from "next/image"
 
-import {Layout, Meta} from "../components/components"
+import {Layout, Meta} from "../components"
 
 type Props = {
     statusCode?: number
