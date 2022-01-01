@@ -1,15 +1,13 @@
-import fs from "fs"
-import path from "path"
-
 import {useRouter} from "next/router"
 
-import {remark} from "remark"
-import html from "remark-html"
+import {MDXRemote as Content} from "next-mdx-remote"
+import {serialize} from "next-mdx-remote/serialize"
+import {getAllValidPaths, readMDXFileContent} from "lib/parser"
 
 import {Layout, MDX, Meta} from "components"
 
 type Props = {
-    content: string
+    mdxSource: string
 }
 
 type Params = {
@@ -18,19 +16,10 @@ type Params = {
     }
 }
 
-export const markdownToHtml = async (markdown: string) => {
-    const result = await remark().use(html).process(markdown)
-    return result.toString()
-}
+const components = {}
 
 export const getStaticPaths = async () => {
-    const items = fs.readdirSync(path.join(process.cwd(), "src/mdx", "/blog")).map(item => {
-        if (item.includes(".mdx")) {
-            if (item === "index.mdx")
-                return "/"
-            return item.replace(".mdx", "")
-        }
-    }).filter(item => !!item)
+    const items = await getAllValidPaths("/blog")
     return {
         paths: items.map(item => {
             return {
@@ -44,16 +33,16 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async ({params}: Params) => {
-    const mdxContent = fs.readFileSync(path.join(process.cwd(), "src/mdx", "/blog", params.slug + ".mdx"), "utf-8")
-    const htmlContent = await markdownToHtml(mdxContent || '')
+    const mdxContent = await readMDXFileContent("/blog", params.slug)
+    const mdxSource = await serialize(mdxContent)
     return {
         props: {
-            content: htmlContent,
-        },
+            mdxSource
+        }
     }
 }
 
-const Blog = ({content}: Props) => {
+const Blog = ({mdxSource}: Props) => {
     const router = useRouter()
     return (
         <>
@@ -71,7 +60,10 @@ const Blog = ({content}: Props) => {
                         <Meta title="Blog - StepBroBD" description="StepBroBD blog."/>
                         <Layout>
                             <MDX>
-                                <div className="container" dangerouslySetInnerHTML={{__html: (content)}}/>
+                                {
+                                    /* @ts-ignore */
+                                    <Content {...mdxSource} components={components}/>
+                                }
                             </MDX>
                         </Layout>
                     </>
