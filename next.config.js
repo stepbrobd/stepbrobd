@@ -1,16 +1,15 @@
 const withPWA = require('next-pwa')
 const runtimeCaching = require('next-pwa/cache')
-const withMDX = require("@next/mdx")()
 
-module.exports = withPWA(withMDX({
+module.exports = withPWA({
     reactStrictMode: true,
-    pageExtensions: ["ts", "tsx", "mdx"],
-    images: {
-        domains: ["static.stepbrobd.com"],
-    },
+    pageExtensions: ["ts", "tsx"],
     pwa: {
         dest: 'public',
         runtimeCaching,
+    },
+    images: {
+        domains: ["static.stepbrobd.com"],
     },
     async redirects() {
         return [
@@ -21,4 +20,4 @@ module.exports = withPWA(withMDX({
             },
         ]
     },
-}))
+})
