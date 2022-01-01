@@ -202,5 +202,5 @@ secring.*
 .vercel
 
 ### Service Worker template
-/public/sw.js
-/public/workbox*.js
+/public/sw*
+/public/workbox*
