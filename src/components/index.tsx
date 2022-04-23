@@ -1,5 +1,0 @@
-export * from "./footer"
-export * from "./header"
-export * from "./layout"
-export * from "./mdx"
-export * from "./meta"
