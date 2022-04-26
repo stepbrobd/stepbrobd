@@ -7,6 +7,12 @@
         box-sizing: border-box;
     }
 
+    html, body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+
     a {
         text-decoration: none;
     }
@@ -17,47 +23,23 @@
 }
 
 @layer utilities {
-    .light-mode-background-color {
-        @apply bg-neutral-100;
+    .animation-delay-1000 {
+        animation-delay: 1s;
     }
 
-    .light-mode-border-color {
-        @apply border-neutral-300;
+    .animation-delay-3000 {
+        animation-delay: 3s;
     }
 
-    .light-mode-text-color {
-        @apply text-neutral-700;
+    .animation-delay-5000 {
+        animation-delay: 5s;
     }
 
-    .light-mode-link-color {
-        @apply text-neutral-600;
-        @apply hover:text-neutral-400;
-        @apply active:text-neutral-400;
+    .animation-delay-7000 {
+        animation-delay: 7s;
     }
 
-    .light-mode-bg-action-color {
-        @apply bg-neutral-400;
-    }
-
-    .dark-mode-background-color {
-        @apply bg-neutral-900;
-    }
-
-    .dark-mode-border-color {
-        @apply border-neutral-700;
-    }
-
-    .dark-mode-text-color {
-        @apply text-neutral-300;
-    }
-
-    .dark-mode-link-color {
-        @apply text-neutral-200;
-        @apply hover:text-neutral-400;
-        @apply active:text-neutral-400;
-    }
-
-    .dark-mode-bg-action-color {
-        @apply bg-neutral-600;
+    .animation-delay-9000 {
+        animation-delay: 9s;
     }
 }
