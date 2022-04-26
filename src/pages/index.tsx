@@ -1,5 +1,7 @@
-import Meta from "../components/meta";
 import Image from "next/image";
+
+import Meta from "../components/meta";
+
 
 const Index = () => {
     return (
