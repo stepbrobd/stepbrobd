@@ -41,6 +41,11 @@ const App = ({Component, pageProps}: AppProps) => {
           `,
                 }}
             />
+            <Script
+                strategy="afterInteractive"
+                data-domain="stepbrobd.com"
+                src={"https://plausible.io/js/plausible.js"}
+            />
             <Component {...pageProps} />
         </>
     );
