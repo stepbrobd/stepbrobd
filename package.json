@@ -7,7 +7,8 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "format": "pnpx prettier --write ."
   },
   "dependencies": {
     "next": "latest",
@@ -19,6 +20,8 @@
     "typescript": "^4.8.4"
   },
   "devDependencies": {
+    "@types/node": "18.11.0",
+    "@types/react": "18.0.21",
     "autoprefixer": "10.4.0",
     "eslint": "^8.25.0",
     "eslint-config-next": "^12.3.1",
