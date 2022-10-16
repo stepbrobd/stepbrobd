@@ -1,6 +1,5 @@
 /** @type {import("next-sitemap").IConfig} */
-
 module.exports = {
-    siteUrl: "https://stepbrobd.com",
-    generateRobotsTxt: true,
+  siteUrl: "https://stepbrobd.com",
+  generateRobotsTxt: true,
 };
