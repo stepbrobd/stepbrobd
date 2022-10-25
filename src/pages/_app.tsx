@@ -1,6 +1,7 @@
 import "../styles/tailwind.css";
 
 import { AppProps } from "next/app";
+import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "next-themes";
 import NextNProgress from "nextjs-progressbar";
 
@@ -23,6 +24,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         />
         <Component {...pageProps} />
       </ThemeProvider>
+      <Analytics />
     </>
   );
 };
