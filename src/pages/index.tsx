@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import Meta from "../components/meta";
 
@@ -9,15 +10,19 @@ const Index = () => {
       <div className="scale-50 transform">
         <div className="z-1 flex h-screen min-h-screen items-center justify-center">
           <div className="absolute inset-0 z-10 flex items-center justify-center">
-            <Image
-              src={"/og/circular.png"}
-              width={256}
-              height={256}
-              quality={75}
-              alt="StepBroBD"
-              placeholder="blur"
-              blurDataURL="/og/circular.png"
-            />
+            <Link rel="me" href="https://mas.to/@StepBroBD" passHref>
+              <a rel="me" href="https://mas.to/@StepBroBD">
+                <Image
+                  src={"/og/circular.png"}
+                  width={256}
+                  height={256}
+                  quality={75}
+                  alt="StepBroBD"
+                  placeholder="blur"
+                  blurDataURL="/og/circular.png"
+                />
+              </a>
+            </Link>
           </div>
           <div
             className="absolute -top-[136rem] -left-[96rem] h-[144rem] w-[144rem]
