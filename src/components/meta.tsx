@@ -126,6 +126,9 @@ const Meta = ({ title, description }: Props) => {
       <meta property="og:image" content="/og/banner.png" />
       <title>{title}</title>
       <meta name="description" content={description} />
+      <a rel="me" href="https://mas.to/@StepBroBD">
+        Mastodon
+      </a>
     </Head>
   );
 };

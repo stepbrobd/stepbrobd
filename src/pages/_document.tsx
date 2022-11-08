@@ -6,7 +6,6 @@ const Document = () => {
     <Html lang="en-US">
       <Head>
         <meta charSet="UTF-8" />
-
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
