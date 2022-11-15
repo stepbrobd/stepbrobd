@@ -9,9 +9,6 @@ const nextConfig = {
     widenClientFileUpload: true,
     transpileClientSDK: true,
   },
-  experimental: {
-    runtime: "experimental-edge",
-  },
   reactStrictMode: true,
   swcMinify: true,
   productionBrowserSourceMaps: true,
