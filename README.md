@@ -1,1 +1,3 @@
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=StepBroBD&count_private=true&show_icons=true&theme=github_dark)
+<p align="center">
+  <a href= "https://stepbrobd.com"><img src="https://stepbrobd.com/og/animated.gif"/></a>
+</p>
