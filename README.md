@@ -2,7 +2,7 @@
   <a href= "https://stepbrobd.com"><img src="https://stepbrobd.com/og/animated.gif"/></a>
 </p>
 
-## You'll have to watch [^Note]
+## Anime! [^Note]
 
 - A Certain Magical Index (series)
 - A Whisker Away
@@ -19,5 +19,12 @@
 - Toradora!
 - YuruYuri
 
+## Music! [^Note]
 
-[^Note]: Recommendations? [Open an issue](https://github.com/StepBroBD/StepBroBD/issues/new/choose)!
+- AKG: Rockn' Roll, Morning Light Falls on You
+- Avicii: Levels
+- Louis The Child: Big Time
+- Sakanaction: Night Fishing Is Good
+- Yorushika: Replicant
+
+[^Note]: Recommendations? [Create an issue](https://github.com/StepBroBD/StepBroBD/issues/new/choose)!
