@@ -20,4 +20,4 @@
 - YuruYuri
 
 
-[^Note]: Recommendations? Open an issue!
+[^Note]: Recommendations? [Open an issue](https://github.com/StepBroBD/StepBroBD/issues/new/choose)!
