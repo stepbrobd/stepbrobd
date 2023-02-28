@@ -2,7 +2,7 @@
   <a href= "https://stepbrobd.com"><img src="https://stepbrobd.com/og/animated.gif"/></a>
 </p>
 
-## You'll have to watch
+## You'll have to watch [^Note]
 
 - A Certain Magical Index (series)
 - A Whisker Away
@@ -19,4 +19,5 @@
 - Toradora!
 - YuruYuri
 
-[^*]: Got some recommendations? Open a issue/pr!
+
+[^Note]: Recommendations? Open an issue!
