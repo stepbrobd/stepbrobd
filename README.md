@@ -24,7 +24,7 @@
 - AKG: Rockn' Roll, Morning Light Falls on You
 - Avicii: Levels
 - Louis The Child: Big Time
-- Sakanaction: Night Fishing Is Good
+- Sakanaction: Night Fishing is Good
 - Yorushika: Replicant
 
 [^Note]: Recommendations? [Create an issue](https://github.com/StepBroBD/StepBroBD/issues/new/choose)!
