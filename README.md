@@ -3,29 +3,25 @@
   <h1>StepBroBD</h1>
 </div>
 
-## Anime! [^Note]
+<div align="center">
 
-- A Certain Magical Index (series)
-- A Whisker Away
-- Bocchi the Rock!
-- Classroom of the Elite
-- Dropkick on My Devil!
-- Lycoris Recoil
-- Magimoji Rurumo
-- Monogatari (series)
-- Nichijou
-- Nisekoi
-- Non Non Biyori
-- Sing a Bit of Harmony
-- Toradora!
-- YuruYuri
+| Anime [^Note]                     | Platform    |
+|:----------------------------------|:------------|
+| A Certain Magical Index (series)  | Crunchyroll |
+| A Whisker Away                    | Netflix     |
+| Bocchi the Rock!                  | Crunchyroll |
+| Classroom of the Elite            | Crunchyroll |
+| Dropkick on My Devil!             | Crunchyroll |
+| Lycoris Recoil                    | Crunchyroll |
+| Magimoji Rurumo                   | Crunchyroll |
+| Monogatari (series)               | Crunchyroll |
+| Nichijou                          | Crunchyroll |
+| Nisekoi                           | Crunchyroll |
+| Non Non Biyori                    | Crunchyroll |
+| Sing a Bit of Harmony             | Crunchyroll |
+| Toradora!                         | Crunchyroll |
+| YuruYuri                          | Crunchyroll |
 
-## Music! [^Note]
-
-- AKG: Rockn' Roll, Morning Light Falls on You
-- Avicii: Levels
-- Louis The Child: Big Time
-- Sakanaction: Night Fishing is Good
-- Yorushika: Replicant
+</div>
 
 [^Note]: Recommendations? [Create an issue](https://github.com/StepBroBD/StepBroBD/issues/new/choose)!
