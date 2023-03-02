@@ -1,5 +1,5 @@
 <div align="center" style="display: flex; justify-content: center; align-items: center;">
-  <a href= "https://stepbrobd.com"><img src="https://stepbrobd.com/og/animated.gif" style="width: 128px; height: 128px;"/></a>
+  <img src="https://stepbrobd.com/og/animated.gif" style="width: 128px; height: 128px;"/>
   <h1>StepBroBD</h1>
 </div>
 
