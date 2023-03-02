@@ -12,15 +12,15 @@
 | Bocchi the Rock!                  | Crunchyroll |
 | Classroom of the Elite            | Crunchyroll |
 | Dropkick on My Devil!             | Crunchyroll |
-| Lycoris Recoil                    | Crunchyroll |
+| Lycoris Recoil                    | Blu-ray     |
 | Magimoji Rurumo                   | Crunchyroll |
 | Monogatari (series)               | Crunchyroll |
-| Nichijou                          | Crunchyroll |
+| Nichijou                          | iTunes      |
 | Nisekoi                           | Crunchyroll |
 | Non Non Biyori                    | Crunchyroll |
 | Sing a Bit of Harmony             | Crunchyroll |
-| Toradora!                         | Crunchyroll |
-| YuruYuri                          | Crunchyroll |
+| Toradora!                         | iTunes      |
+| YuruYuri                          | iTunes      |
 
 </div>
 
