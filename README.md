@@ -9,6 +9,7 @@
 |:----------------------------------|:------------|
 | A Certain Magical Index (series)  | Crunchyroll |
 | A Whisker Away                    | Netflix     |
+| Azumanga Daioh                    | HIDIVE      |
 | Bocchi the Rock!                  | Crunchyroll |
 | Classroom of the Elite            | Crunchyroll |
 | Dropkick on My Devil!             | Crunchyroll |
