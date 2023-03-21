@@ -7,12 +7,16 @@
 
 | Anime [^Note]                              | Platform    |
 |:-------------------------------------------|:------------|
-| A Certain Magical Index (series)           | Crunchyroll |
+| A Certain Magical Index (series)           | iTunes      |
+| A Certain Scientific Accelerator           | Crunchyroll |
+| A Certain Scientific Railgun (series)      | iTunes      |
 | A Whisker Away                             | Netflix     |
+| Akiba Maid War                             | HIDIVE      |
 | Azumanga Daioh                             | HIDIVE      |
 | Blend-S                                    | Crunchyroll |
 | Bocchi the Rock!                           | Crunchyroll |
 | Classroom of the Elite                     | Crunchyroll |
+| Don't Toy with Me, Miss Nagatoro           | Crunchyroll |
 | Dropkick on My Devil!                      | Crunchyroll |
 | Engage Kiss                                | Crunchyroll |
 | Joshiraku                                  | HIDIVE      |
@@ -23,6 +27,7 @@
 | Magimoji Rurumo                            | Crunchyroll |
 | Miss Kobayashi's Dragon Maid               | Crunchyroll |
 | Monogatari (series)                        | Crunchyroll |
+| My Dress-Up Darling                        | Crunchyroll |
 | Nichijou                                   | iTunes      |
 | Nisekoi                                    | Crunchyroll |
 | Non Non Biyori                             | Crunchyroll |
@@ -38,4 +43,4 @@
 
 </div>
 
-[^Note]: Recommendations? [Create an issue](https://github.com/StepBroBD/StepBroBD/issues/new/choose)!
+[^Note]: Recommendations? [Create an issue](https://github.com/StepBroBD/StepBroBD/issues/new/choose)! Last updated on March 20, 2023.
