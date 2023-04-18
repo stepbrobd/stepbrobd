@@ -41,6 +41,7 @@
 | Nisekoi                                    | Crunchyroll |
 | Non Non Biyori                             | Crunchyroll |
 | Onimai: I'm Now Your Sister!               | Crunchyroll |
+| Oshi no Ko                                 | HIDIVE      |
 | Rascal Does Not Dream of Bunny Girl Senpai | Crunchyroll |
 | Sing a Bit of Harmony                      | Crunchyroll |
 | Slow Loop                                  | Crunchyroll |
@@ -55,4 +56,4 @@
 
 </div>
 
-[^Note]: Recommendations? [Create an issue](https://github.com/StepBroBD/StepBroBD/issues/new/choose)! Last updated on April 6, 2023.
+[^Note]: Recommendations? [Create an issue](https://github.com/StepBroBD/StepBroBD/issues/new/choose)! Last updated on April 17, 2023.
