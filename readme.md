@@ -19,6 +19,7 @@
 | Azumanga Daioh                             | HIDIVE      |
 | Blend-S                                    | Crunchyroll |
 | Bocchi the Rock!                           | Crunchyroll |
+| Call of the Night                          | HIDIVE      |
 | Chainsaw Man                               | Crunchyroll |
 | Classroom of the Elite                     | Crunchyroll |
 | Don't Toy with Me, Miss Nagatoro           | Crunchyroll |
@@ -33,9 +34,11 @@
 | Laid-Back Camp                             | Crunchyroll |
 | Lycoris Recoil                             | Blu-ray     |
 | Magimoji Rurumo                            | Crunchyroll |
+| MASHLE: Magic and Muscles                  | Crunchyroll |
 | Miss Kobayashi's Dragon Maid               | Crunchyroll |
 | Monogatari (series)                        | Crunchyroll |
 | My Dress-Up Darling                        | Crunchyroll |
+| My Love Story with Yamada-kun at Lv999     | Crunchyroll |
 | My Teen Romantic Comedy SNAFU              | Crunchyroll |
 | Nichijou                                   | iTunes      |
 | Nisekoi                                    | Crunchyroll |
@@ -44,8 +47,10 @@
 | Oshi no Ko                                 | HIDIVE      |
 | Rascal Does Not Dream of Bunny Girl Senpai | Crunchyroll |
 | Sing a Bit of Harmony                      | Crunchyroll |
+| Skip and Loafer                            | Crunchyroll |
 | Slow Loop                                  | Crunchyroll |
 | That Time I Got ReIncarnated as a Slime    | Crunchyroll |
+| The Dangers in My Heart                    | HIDIVE      |
 | The Demon Girl Next Door                   | Blu-ray     |
 | The Pet Girl of Sakurasou                  | HIDIVE      |
 | This Art Club Has a Problem!               | Crunchyroll |
@@ -56,4 +61,4 @@
 
 </div>
 
-[^Note]: Recommendations? [Create an issue](https://github.com/StepBroBD/StepBroBD/issues/new/choose)! Last updated on April 17, 2023.
+[^Note]: Recommendations? [Create an issue](https://github.com/stepbrobd/stepbrobd/issues/new/choose)! Last updated on June 19, 2023.
