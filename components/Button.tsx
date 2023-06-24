@@ -1,7 +1,7 @@
 import { JSX } from "preact";
 import { IS_BROWSER } from "$fresh/runtime.ts";
 
-export function Button(props: JSX.HTMLAttributes<HTMLButtonElement>) {
+const Button = (props: JSX.HTMLAttributes<HTMLButtonElement>) => {
   return (
     <button
       {...props}
@@ -9,4 +9,6 @@ export function Button(props: JSX.HTMLAttributes<HTMLButtonElement>) {
       class="px-2 py-1 border(gray-100 2) hover:bg-gray-200"
     />
   );
-}
+};
+
+export default Button;

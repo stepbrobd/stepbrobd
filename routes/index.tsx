@@ -1,19 +1,21 @@
 import { Head } from "$fresh/runtime.ts";
 import { useSignal } from "@preact/signals";
-import Counter from "../islands/Counter.tsx";
+import Counter from "../islands/counter.tsx";
+import Meta from "../components/meta.tsx";
 
-export default function Home() {
+const Home = () => {
   const count = useSignal(3);
   return (
     <>
       <Head>
-        <title>Fresh App</title>
+        <title>StepBroBD Inc.</title>
       </Head>
+      <Meta />
       <div class="p-4 mx-auto max-w-screen-md">
         <img
-          src="/logo.svg"
+          src="/assets/circular.png"
           class="w-32 h-32"
-          alt="the fresh logo: a sliced lemon dripping with juice"
+          alt="StepBroBD Inc."
         />
         <p class="my-6">
           Welcome to `fresh`. Try updating this message in the
@@ -23,4 +25,6 @@ export default function Home() {
       </div>
     </>
   );
-}
+};
+
+export default Home;

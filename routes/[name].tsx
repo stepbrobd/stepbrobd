@@ -1,5 +1,7 @@
 import { PageProps } from "$fresh/server.ts";
 
-export default function Greet(props: PageProps) {
-  return <div>Hello {props.params.name}</div>;
-}
+const Greet = ({ params: { name } }: PageProps) => {
+  return <div>Hello {name}</div>;
+};
+
+export default Greet;
