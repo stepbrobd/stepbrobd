@@ -6,12 +6,6 @@ node_modules
 # testing
 coverage
 
-# next.js
-.next/
-out/
-build
-next-env.d.ts
-
 # misc
 .DS_Store
 *.pem
@@ -32,7 +26,8 @@ yarn-error.log*
 # turbo
 .turbo
 
-### VisualStudioCode template
+### VSCode template
+.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
