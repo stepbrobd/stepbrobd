@@ -19,14 +19,14 @@ const Logo = ({
                   autoPlay
                   loop
                   muted
-                  class="w-8 h-8"
+                  class="w-8 h-8 rounded-full"
                 />
               )
               : (
                 <img
                   src="/assets/stepbrobd.webp"
                   alt="StepBroBD Inc."
-                  class="w-8 h-8"
+                  class="w-8 h-8 rounded-full"
                 />
               )}
             {StepBroBD && (
@@ -46,14 +46,14 @@ const Logo = ({
                   autoPlay
                   loop
                   muted
-                  class="w-16 h-16"
+                  class="w-16 h-16 rounded-full"
                 />
               )
               : (
                 <img
                   src="/assets/stepbrobd.webp"
                   alt="StepBroBD Inc."
-                  class="w-16 h-16"
+                  class="w-16 h-16 rounded-full"
                 />
               )}
             {StepBroBD && (
@@ -73,14 +73,14 @@ const Logo = ({
                   autoPlay
                   loop
                   muted
-                  class="w-32 h-32"
+                  class="w-32 h-32 rounded-full"
                 />
               )
               : (
                 <img
                   src="/assets/stepbrobd.webp"
                   alt="StepBroBD Inc."
-                  class="w-32 h-32"
+                  class="w-32 h-32 rounded-full"
                 />
               )}
             {StepBroBD && (
