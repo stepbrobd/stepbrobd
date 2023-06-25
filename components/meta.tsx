@@ -1,120 +1,35 @@
 import { Head } from "$fresh/runtime.ts";
 
-const Meta = () => {
+const Meta = ({
+  title = "StepBroBD Inc.",
+  description = "Welcome to StepBroBD Inc. official website. Need to get in touch? Checkout our website, or our social media.",
+  image = "https://stepbrobd.com/assets/circular.png",
+  url = "https://stepbrobd.com",
+}: {
+  title?: string;
+  description?: string;
+  image?: string;
+  url?: string;
+}) => {
   return (
     <Head>
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_US" />
+      <meta property="twitter:card" content="summary_large_image" />
 
-      <link rel="icon" type="image/x-icon" href="/favicons/favicon.ico" />
+      <title>{title}</title>
+      <meta property="og:title" content={title} />
+      <meta property="twitter:title" content={title} />
 
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="/favicons/favicon-16x16.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="/favicons/favicon-32x32.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="96x96"
-        href="/favicons/favicon-96x96.png"
-      />
+      <meta name="description" content={description} />
+      <meta property="description" content={description} />
+      <meta property="og:description" content={description} />
+      <meta property="twitter:description" content={description} />
 
-      <link rel="apple-touch-icon" href="/favicons/apple-icon.png" />
-      <link
-        rel="apple-touch-icon-precomposed"
-        href="/favicons/apple-icon-precomposed.png"
-      />
+      <meta property="og:image" content={image} />
+      <meta property="twitter:image" content={image} />
 
-      <link
-        rel="apple-touch-icon"
-        sizes="57x57"
-        href="/favicons/apple-icon-57x57.png"
-      />
-      <link
-        rel="apple-touch-icon"
-        sizes="60x60"
-        href="/favicons/apple-icon-60x60.png"
-      />
-      <link
-        rel="apple-touch-icon"
-        sizes="72x72"
-        href="/favicons/apple-icon-72x72.png"
-      />
-      <link
-        rel="apple-touch-icon"
-        sizes="76x76"
-        href="/favicons/apple-icon-76x76.png"
-      />
-      <link
-        rel="apple-touch-icon"
-        sizes="114x114"
-        href="/favicons/apple-icon-114x114.png"
-      />
-      <link
-        rel="apple-touch-icon"
-        sizes="120x120"
-        href="/favicons/apple-icon-120x120.png"
-      />
-      <link
-        rel="apple-touch-icon"
-        sizes="144x144"
-        href="/favicons/apple-icon-144x144.png"
-      />
-      <link
-        rel="apple-touch-icon"
-        sizes="152x152"
-        href="/favicons/apple-icon-152x152.png"
-      />
-      <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="/favicons/apple-icon-180x180.png"
-      />
-
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="36x36"
-        href="/favicons/android-icon-36x36.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="48x48"
-        href="/favicons/android-icon-48x48.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="72x72"
-        href="/favicons/android-icon-72x72.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="96x96"
-        href="/favicons/android-icon-96x96.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="144x144"
-        href="/favicons/android-icon-144x144.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="192x192"
-        href="/favicons/android-icon-192x192.png"
-      />
+      <meta property="og:url" content={url} />
     </Head>
   );
 };

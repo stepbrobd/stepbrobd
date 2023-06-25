@@ -1,29 +1,19 @@
-import { Head } from "$fresh/runtime.ts";
-import { useSignal } from "@preact/signals";
-import Counter from "$islands/counter.tsx";
 import Meta from "$components/meta.tsx";
-import Theme from "$islands/theme.tsx";
-
 const Home = () => {
-  const count = useSignal(3);
   return (
     <>
-      <Head>
-        <title>StepBroBD Inc.</title>
-      </Head>
       <Meta />
-      <div class="p-4 mx-auto max-w-screen-md">
+      <div class="w-full h-screen">
         <img
-          src="/assets/circular.png"
-          class="w-32 h-32"
+          class="absolute inset-0 z-10 w-32 h-32 rounded-full mx-auto my-auto"
+          src="/assets/stepbrobd.gif"
           alt="StepBroBD Inc."
         />
-        <p class="my-6">
-          Welcome to `fresh`. Try updating this message in the
-          ./routes/index.tsx file, and refresh.
-        </p>
-        <Counter count={count} />
-        <Theme prev="system" />
+        <img
+          class="absolute inset-0 top-0 left-0 -z-50 object-cover w-full h-full"
+          src="/assets/bg.gif"
+          alt="StepBroBD Inc."
+        />
       </div>
     </>
   );
