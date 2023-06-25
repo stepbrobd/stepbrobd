@@ -21,16 +21,32 @@ export default function Footer() {
 
       <div class="flex flex-col space-y-8">
         <div class="flex flex-row space-x-4 items-center justify-center md:justify-end h-8">
-          <a href="https://github.com/stepbrobd" class="inline-block">
+          <a
+            href="https://github.com/stepbrobd"
+            class="inline-block"
+            aria-label="GitHub"
+          >
             <BrandGithub />
           </a>
-          <a href="https://twitter.com/stepbrobd" class="inline-block">
+          <a
+            href="https://twitter.com/stepbrobd"
+            class="inline-block"
+            aria-label="Twitter"
+          >
             <BrandTwitter />
           </a>
-          <a href="https://instagram.com/stepbrobd" class="inline-block">
+          <a
+            href="https://instagram.com/stepbrobd"
+            class="inline-block"
+            aria-label="Instagram"
+          >
             <BrandInstagram />
           </a>
-          <a href="https://www.reddit.com/user/stepbrobd" class="inline-block">
+          <a
+            href="https://www.reddit.com/user/stepbrobd"
+            class="inline-block"
+            aria-label="Reddit"
+          >
             <BrandReddit />
           </a>
           <a href="mailto:Hi@StepBroBD.com" class="inline-block">
