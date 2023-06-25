@@ -22,12 +22,12 @@ export default function App({ Component }: AppProps) {
         <meta
           name="theme-color"
           media="(prefers-color-scheme: light)"
-          content="white"
+          content="#ffffff"
         />
         <meta
           name="theme-color"
           media="(prefers-color-scheme: dark)"
-          content="black"
+          content="#000000"
         />
         <link rel="icon" type="image/x-icon" href="/favicons/favicon.ico" />
         <link
@@ -134,6 +134,9 @@ export default function App({ Component }: AppProps) {
           sizes="192x192"
           href="/favicons/android-icon-192x192.png"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="twitter:card" content="summary_large_image" />
       </Head>
       <body class="flex flex-col h-screen bg-white text-black dark:bg-black dark:text-white">
         <Header />

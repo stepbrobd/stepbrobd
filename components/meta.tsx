@@ -14,10 +14,6 @@ const Meta = ({
 }) => {
   return (
     <Head>
-      <meta property="og:type" content="website" />
-      <meta property="og:locale" content="en_US" />
-      <meta property="twitter:card" content="summary_large_image" />
-
       <title>{title}</title>
       <meta property="og:title" content={title} />
       <meta property="twitter:title" content={title} />
