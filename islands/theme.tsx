@@ -1,9 +1,5 @@
-import { useState } from "preact/hooks";
+import { useEffect, useState } from "preact/hooks";
 import { IS_BROWSER } from "$fresh/runtime.ts";
-import Button from "$components/button.tsx";
-import IconDeviceDesktop from "icons/tsx/device-desktop.tsx";
-import IconMoon from "icons/tsx/moon.tsx";
-import IconSun from "icons/tsx/sun.tsx";
 
 interface ThemeProps {
   prev: "light" | "dark" | "system";
@@ -33,43 +29,37 @@ const Theme = (props: ThemeProps) => {
 
   const [mode, setMode] = useState(getMode());
 
-  const setDarkModeOn = () => {
-    localStorage.theme = "dark";
+  useEffect(() => {
+    switch (mode) {
+      case "dark":
+        localStorage.theme = "dark";
+        break;
+      case "light":
+        localStorage.theme = "light";
+        break;
+      case "system":
+        delete localStorage.theme;
+        break;
+    }
     updateMode();
-    setMode("dark");
-  };
+  }, [mode]);
 
-  const setDarkModeAuto = () => {
-    delete localStorage.theme;
-    updateMode();
-    setMode("system");
-  };
-
-  const setDarkModeOff = () => {
-    localStorage.theme = "light";
-    updateMode();
-    setMode("light");
+  // deno-lint-ignore no-explicit-any
+  const handleSelectChange = (event: any) => {
+    setMode(event.target.value);
   };
 
   return (
-    <div class="flex gap-2 w-full">
-      <Button onClick={setDarkModeOn}>
-        <IconMoon />
-        Force Dark
-      </Button>
-
-      <Button onClick={setDarkModeAuto}>
-        <IconDeviceDesktop />
-        System
-      </Button>
-
-      <Button onClick={setDarkModeOff}>
-        <IconSun />
-        Force light
-      </Button>
-      <div>
-        Current Mode: <b class="text-3xl">{mode}</b>
-      </div>
+    <div class="flex items-center w-24 h-8">
+      <select
+        onInput={handleSelectChange}
+        value={mode}
+        class="border w-24 h-8 flex items-center justify-center text-center rounded bg-transparent"
+      >
+        <option value="dark">&#x263E;&#xFE0E; Dark</option>
+        <option value="light">&#x2600;&#xFE0E; Light</option>
+        <option value="system">&#x2699;&#xFE0E; System</option>
+      </select>
     </div>
   );
 };

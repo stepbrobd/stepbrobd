@@ -1,5 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
 import { AppProps } from "$fresh/src/server/types.ts";
+import Header from "$components/header.tsx";
+import Footer from "$components/footer.tsx";
 
 export default function App({ Component }: AppProps) {
   return (
@@ -16,6 +18,16 @@ export default function App({ Component }: AppProps) {
                 global_dark();
             `,
           }}
+        />
+        <meta
+          name="theme-color"
+          media="(prefers-color-scheme: light)"
+          content="white"
+        />
+        <meta
+          name="theme-color"
+          media="(prefers-color-scheme: dark)"
+          content="black"
         />
         <link rel="icon" type="image/x-icon" href="/favicons/favicon.ico" />
         <link
@@ -123,10 +135,12 @@ export default function App({ Component }: AppProps) {
           href="/favicons/android-icon-192x192.png"
         />
       </Head>
-      <body class="bg-white text-black dark:bg-black dark:text-white">
-        <main>
+      <body class="flex flex-col h-screen bg-white text-black dark:bg-black dark:text-white">
+        <Header />
+        <main class="flex-grow">
           <Component />
         </main>
+        <Footer />
       </body>
       <script
         defer

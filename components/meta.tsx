@@ -2,8 +2,9 @@ import { Head } from "$fresh/runtime.ts";
 
 const Meta = ({
   title = "StepBroBD Inc.",
-  description = "Welcome to StepBroBD Inc. official website. Need to get in touch? Checkout our website, or our social media.",
-  image = "https://stepbrobd.com/assets/circular.png",
+  description =
+    "Welcome to StepBroBD Inc. official website. Need to get in touch? Checkout our website, or our social media.",
+  image = "https://stepbrobd.com/assets/og.webp",
   url = "https://stepbrobd.com",
 }: {
   title?: string;
