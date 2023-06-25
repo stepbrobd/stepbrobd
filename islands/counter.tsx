@@ -1,5 +1,5 @@
 import type { Signal } from "@preact/signals";
-import Button from "../components/button.tsx";
+import Button from "$components/button.tsx";
 
 const Counter = ({ count }: { count: Signal<number> }) => {
   return (

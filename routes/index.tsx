@@ -1,7 +1,8 @@
 import { Head } from "$fresh/runtime.ts";
 import { useSignal } from "@preact/signals";
-import Counter from "../islands/counter.tsx";
-import Meta from "../components/meta.tsx";
+import Counter from "$islands/counter.tsx";
+import Meta from "$components/meta.tsx";
+import Theme from "$islands/theme.tsx";
 
 const Home = () => {
   const count = useSignal(3);
@@ -22,6 +23,7 @@ const Home = () => {
           ./routes/index.tsx file, and refresh.
         </p>
         <Counter count={count} />
+        <Theme prev="system" />
       </div>
     </>
   );
