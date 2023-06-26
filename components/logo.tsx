@@ -1,3 +1,5 @@
+import { asset } from "$fresh/runtime.ts";
+
 const Logo = ({
   StepBroBD = false,
   animated = false,
@@ -15,7 +17,7 @@ const Logo = ({
             {animated
               ? (
                 <video
-                  src="/assets/stepbrobd.webm"
+                  src={asset("/assets/stepbrobd.webm")}
                   autoPlay
                   loop
                   muted
@@ -24,7 +26,7 @@ const Logo = ({
               )
               : (
                 <img
-                  src="/assets/stepbrobd.webp"
+                  src={asset("/assets/stepbrobd.webp")}
                   alt="StepBroBD Inc."
                   class="w-8 h-8 rounded-full"
                 />
@@ -44,7 +46,7 @@ const Logo = ({
             {animated
               ? (
                 <video
-                  src="/assets/stepbrobd.webm"
+                  src={asset("/assets/stepbrobd.webm")}
                   autoPlay
                   loop
                   muted
@@ -53,7 +55,7 @@ const Logo = ({
               )
               : (
                 <img
-                  src="/assets/stepbrobd.webp"
+                  src={asset("/assets/stepbrobd.webp")}
                   alt="StepBroBD Inc."
                   class="w-16 h-16 rounded-full"
                 />
@@ -73,7 +75,7 @@ const Logo = ({
             {animated
               ? (
                 <video
-                  src="/assets/stepbrobd.webm"
+                  src={asset("/assets/stepbrobd.webm")}
                   autoPlay
                   loop
                   muted
@@ -82,7 +84,7 @@ const Logo = ({
               )
               : (
                 <img
-                  src="/assets/stepbrobd.webp"
+                  src={asset("/assets/stepbrobd.webp")}
                   alt="StepBroBD Inc."
                   class="w-32 h-32 rounded-full"
                 />

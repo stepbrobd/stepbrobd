@@ -1,3 +1,4 @@
+import { asset } from "$fresh/runtime.ts";
 import Meta from "$components/meta.tsx";
 
 const Error = ({
@@ -23,7 +24,7 @@ const Error = ({
         description={`${status} ${description} - StepBroBD Inc.`}
       />
       <video
-        src="/assets/lightning.mp4"
+        src={asset("/assets/lightning.mp4")}
         autoPlay
         playsInline
         loop

@@ -4,6 +4,7 @@ const Meta = ({
   title = "StepBroBD Inc.",
   description =
     "Welcome to StepBroBD Inc. official website. Need to get in touch? Checkout our website, or our social media.",
+  // open graph image must have absolute url
   image = "https://stepbrobd.com/assets/og.webp",
   url = "https://stepbrobd.com",
 }: {

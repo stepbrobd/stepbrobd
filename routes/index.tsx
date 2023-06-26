@@ -1,3 +1,4 @@
+import { asset } from "$fresh/runtime.ts";
 import Meta from "$components/meta.tsx";
 import Logo from "$components/logo.tsx";
 
@@ -6,7 +7,7 @@ const Page = () => {
     <>
       <Meta />
       <video
-        src="/assets/lightning.mp4"
+        src={asset("/assets/lightning.mp4")}
         autoPlay
         playsInline
         loop
