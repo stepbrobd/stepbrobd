@@ -15,7 +15,7 @@ const Logo = ({
             {animated
               ? (
                 <video
-                  src="/assets/stepbrobd.mp4"
+                  src="/assets/stepbrobd.webm"
                   autoPlay
                   loop
                   muted
@@ -42,7 +42,7 @@ const Logo = ({
             {animated
               ? (
                 <video
-                  src="/assets/stepbrobd.mp4"
+                  src="/assets/stepbrobd.webm"
                   autoPlay
                   loop
                   muted
@@ -69,7 +69,7 @@ const Logo = ({
             {animated
               ? (
                 <video
-                  src="/assets/stepbrobd.mp4"
+                  src="/assets/stepbrobd.webm"
                   autoPlay
                   loop
                   muted
