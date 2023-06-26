@@ -1,11 +1,9 @@
 import Logo from "$components/logo.tsx";
 import Theme from "$islands/theme.tsx";
 
-import IconMail from "icons/tsx/mail.tsx";
-import BrandGithub from "icons/tsx/brand-github.tsx";
-import BrandTwitter from "icons/tsx/brand-twitter.tsx";
-import BrandInstagram from "icons/tsx/brand-instagram.tsx";
-import BrandReddit from "icons/tsx/brand-reddit.tsx";
+import IconBrandGithub from "icons/tsx/brand-github.tsx";
+import IconBrandTwitter from "icons/tsx/brand-twitter.tsx";
+import IconBrandYoutube from "icons/tsx/brand-youtube.tsx";
 
 export default function Footer() {
   return (
@@ -23,34 +21,27 @@ export default function Footer() {
         <div class="flex flex-row space-x-4 items-center justify-center md:justify-end h-8">
           <a
             href="https://github.com/stepbrobd"
+            target="_blank"
             class="inline-block"
             aria-label="GitHub"
           >
-            <BrandGithub />
+            <IconBrandGithub />
           </a>
           <a
             href="https://twitter.com/stepbrobd"
+            target="_blank"
             class="inline-block"
             aria-label="Twitter"
           >
-            <BrandTwitter />
+            <IconBrandTwitter />
           </a>
           <a
-            href="https://instagram.com/stepbrobd"
+            href="https://www.youtube.com/@stepbrobd"
+            target="_blank"
             class="inline-block"
-            aria-label="Instagram"
+            aria-label="YouTube"
           >
-            <BrandInstagram />
-          </a>
-          <a
-            href="https://www.reddit.com/user/stepbrobd"
-            class="inline-block"
-            aria-label="Reddit"
-          >
-            <BrandReddit />
-          </a>
-          <a href="mailto:Hi@StepBroBD.com" class="inline-block">
-            <IconMail />
+            <IconBrandYoutube />
           </a>
         </div>
         <div class="flex items-center justify-center md:justify-end h-8">

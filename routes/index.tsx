@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <Meta />
       <video
-        src="/assets/bg.webm"
+        src="https://stepbrobd.com/assets/bg.webm"
         autoPlay
         loop
         muted
