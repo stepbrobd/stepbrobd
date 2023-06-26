@@ -15,7 +15,7 @@ const Logo = ({
             {animated
               ? (
                 <video
-                  src="https://stepbrobd.com/assets/stepbrobd.webm"
+                  src="/assets/stepbrobd.webm"
                   autoPlay
                   loop
                   muted
@@ -24,13 +24,15 @@ const Logo = ({
               )
               : (
                 <img
-                  src="https://stepbrobd.com/assets/stepbrobd.webp"
+                  src="/assets/stepbrobd.webp"
                   alt="StepBroBD Inc."
                   class="w-8 h-8 rounded-full"
                 />
               )}
             {StepBroBD && (
-              <div class="text-2xl ml-2 font-bold">StepBroBD Inc.</div>
+              <div class="text-2xl ml-1 font-bold tracking-tight">
+                StepBroBD Inc.
+              </div>
             )}
           </div>
         </a>
@@ -42,7 +44,7 @@ const Logo = ({
             {animated
               ? (
                 <video
-                  src="https://stepbrobd.com/assets/stepbrobd.webm"
+                  src="/assets/stepbrobd.webm"
                   autoPlay
                   loop
                   muted
@@ -51,13 +53,15 @@ const Logo = ({
               )
               : (
                 <img
-                  src="https://stepbrobd.com/assets/stepbrobd.webp"
+                  src="/assets/stepbrobd.webp"
                   alt="StepBroBD Inc."
                   class="w-16 h-16 rounded-full"
                 />
               )}
             {StepBroBD && (
-              <div class="text-4xl ml-4 font-bold">StepBroBD Inc.</div>
+              <div class="text-4xl ml-2 font-bold tracking-tight">
+                StepBroBD Inc.
+              </div>
             )}
           </div>
         </a>
@@ -69,7 +73,7 @@ const Logo = ({
             {animated
               ? (
                 <video
-                  src="https://stepbrobd.com/assets/stepbrobd.webm"
+                  src="/assets/stepbrobd.webm"
                   autoPlay
                   loop
                   muted
@@ -78,13 +82,15 @@ const Logo = ({
               )
               : (
                 <img
-                  src="https://stepbrobd.com/assets/stepbrobd.webp"
+                  src="/assets/stepbrobd.webp"
                   alt="StepBroBD Inc."
                   class="w-32 h-32 rounded-full"
                 />
               )}
             {StepBroBD && (
-              <div class="text-8xl ml-8 font-bold">StepBroBD Inc.</div>
+              <div class="text-8xl ml-4 font-bold tracking-tight">
+                StepBroBD Inc.
+              </div>
             )}
           </div>
         </a>

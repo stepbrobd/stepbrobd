@@ -50,17 +50,19 @@ const Theme = (props: ThemeProps) => {
   };
 
   return (
-    <div class="flex items-center w-24 h-8">
-      <select
-        onInput={handleSelectChange}
-        value={mode}
-        class="border w-24 h-8 flex items-center justify-center text-center rounded bg-transparent"
-      >
-        <option value="dark">&#x263E;&#xFE0E; Dark</option>
-        <option value="light">&#x2600;&#xFE0E; Light</option>
-        <option value="system">&#x2699;&#xFE0E; System</option>
-      </select>
-    </div>
+    <select
+      onInput={handleSelectChange}
+      value={mode}
+      style={{
+        textAlign: "center",
+        textAlignLast: "center",
+      }}
+      class="border border-black dark:border-white w-24 h-8 rounded-md bg-transparent"
+    >
+      <option value="system">System</option>
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
   );
 };
 
