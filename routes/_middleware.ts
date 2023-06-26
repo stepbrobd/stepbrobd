@@ -20,7 +20,7 @@ export const handler = async (
       "Content-Security-Policy",
       "default-src 'self' stepbrobd.com *.stepbrobd.com; " +
         "child-src 'self' stepbrobd.com *.stepbrobd.com; " +
-        "connect-src 'self' stepbrobd.com *.stepbrobd.com; " +
+        "connect-src 'self' stepbrobd.com *.stepbrobd.com plausible.io; " +
         "font-src 'self' stepbrobd.com *.stepbrobd.com; " +
         "frame-src 'self' stepbrobd.com *.stepbrobd.com; " +
         "img-src 'self' stepbrobd.com *.stepbrobd.com heapanalytics.com; " +
