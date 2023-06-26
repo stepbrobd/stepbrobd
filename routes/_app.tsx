@@ -3,7 +3,7 @@ import { AppProps } from "$fresh/src/server/types.ts";
 import Header from "$components/header.tsx";
 import Footer from "$components/footer.tsx";
 
-export default function App({ Component }: AppProps) {
+const App = ({ Component }: AppProps) => {
   return (
     <html>
       <Head>
@@ -161,4 +161,6 @@ export default function App({ Component }: AppProps) {
       />
     </html>
   );
-}
+};
+
+export default App;

@@ -1,6 +1,6 @@
 import Logo from "$components/logo.tsx";
 
-export default function Header() {
+const Header = () => {
   return (
     <header class="w-full py-4 px-8 flex flex-row items-center justify-between backdrop-filter backdrop-blur backdrop-brightness-75">
       <div class="flex items-center justify-start h-8">
@@ -13,4 +13,6 @@ export default function Header() {
       </div>
     </header>
   );
-}
+};
+
+export default Header;

@@ -7,7 +7,7 @@ import IconBrandTwitter from "icons/tsx/brand-twitter.tsx";
 import IconBrandInstagram from "icons/tsx/brand-instagram.tsx";
 import IconBrandYoutube from "icons/tsx/brand-youtube.tsx";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer class="flex flex-col space-y-8 items-start md:items-center md:flex-row md:justify-between md:space-y-0 w-full px-8 py-8 backdrop-filter backdrop-blur backdrop-brightness-75">
       <div class="flex flex-col space-y-8">
@@ -71,4 +71,6 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

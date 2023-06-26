@@ -1,14 +1,10 @@
 import { useEffect, useState } from "preact/hooks";
 import { IS_BROWSER } from "$fresh/runtime.ts";
 
-interface ThemeProps {
-  prev: "light" | "dark" | "system";
-}
-
-const Theme = (props: ThemeProps) => {
+const Theme = ({ prev }: { prev: "light" | "dark" | "system" }) => {
   function getMode(): "light" | "dark" | "system" {
     if (!IS_BROWSER) {
-      return props.prev;
+      return prev;
     }
     if (localStorage.theme === "dark") {
       return "dark";
