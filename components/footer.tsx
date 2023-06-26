@@ -1,6 +1,7 @@
 import Logo from "$components/logo.tsx";
 import Theme from "$islands/theme.tsx";
 
+import IconBrandDeno from "icons/tsx/brand-deno.tsx";
 import IconBrandGithub from "icons/tsx/brand-github.tsx";
 import IconBrandTwitter from "icons/tsx/brand-twitter.tsx";
 import IconBrandInstagram from "icons/tsx/brand-instagram.tsx";
@@ -14,9 +15,17 @@ export default function Footer() {
           <Theme prev="system" />
         </div>
 
-        <div class="flex flex-row space-x-4 items-center justify-start h-8">
+        <div class="flex flex-row space-x-2 items-center justify-start h-8">
           <a
-            href="https://github.com/stepbrobd"
+            href="https://deno.land/x/stepbrobd"
+            target="_blank"
+            class="inline-block"
+            aria-label="Deno"
+          >
+            <IconBrandDeno />
+          </a>
+          <a
+            href="https://github.com/stepbrobd/stepbrobd.com"
             target="_blank"
             class="inline-block"
             aria-label="GitHub"
