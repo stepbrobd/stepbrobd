@@ -45,6 +45,7 @@ const Menu = () => {
   return (
     <nav ref={menuRef}>
       <button
+        aria-label="menu"
         class="h-8 w-8 flex items-center justify-center relative"
         onClick={handleIconClick}
       >

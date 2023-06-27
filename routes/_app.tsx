@@ -140,7 +140,7 @@ const App = ({ Component }: AppProps) => {
       </Head>
       <body class="flex flex-col h-screen bg-white text-black dark:bg-black dark:text-white">
         <Header />
-        <main class="flex-grow">
+        <main class="flex-grow" aria-label="content">
           <Component />
         </main>
         <Footer />

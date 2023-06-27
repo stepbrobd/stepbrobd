@@ -12,7 +12,7 @@ const Logo = ({
   switch (size) {
     case "small":
       return (
-        <a href="/">
+        <a href="/" aria-label="StepBroBD Inc.">
           <div class="flex items-center select-none">
             {animated
               ? (
@@ -41,7 +41,7 @@ const Logo = ({
       );
     case "medium":
       return (
-        <a href="/">
+        <a href="/" aria-label="StepBroBD Inc.">
           <div class="flex items-center select-none">
             {animated
               ? (
@@ -70,7 +70,7 @@ const Logo = ({
       );
     case "large":
       return (
-        <a href="/">
+        <a href="/" aria-label="StepBroBD Inc.">
           <div class="flex items-center select-none">
             {animated
               ? (

@@ -47,6 +47,7 @@ const Theme = ({ prev }: { prev: "light" | "dark" | "system" }) => {
 
   return (
     <select
+      aria-label="theme"
       onInput={handleSelectChange}
       value={mode}
       style={{
