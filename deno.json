@@ -11,6 +11,8 @@
     "$islands/": "./islands/",
     "$routes/": "./routes/",
     "$static/": "./static/",
+    "$utils/": "./utils/",
+    "gfm": "https://deno.land/x/gfm@0.2.3/mod.ts",
     "icons": "https://deno.land/x/tabler_icons_tsx@0.0.4",
     "icons/": "https://deno.land/x/tabler_icons_tsx@0.0.4/",
     "preact": "https://esm.sh/preact@10.15.1",

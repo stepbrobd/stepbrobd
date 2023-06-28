@@ -10,24 +10,17 @@ const App = ({ Component }: AppProps) => {
         <script
           dangerouslySetInnerHTML={{
             __html: `
-                function global_dark(change) {
-                    if (change === 'auto') delete localStorage.theme; else if (change === 'on') localStorage.theme = 'dark'; else if (change === 'off') localStorage.theme = 'light';
-                    window.isDark = localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
-                    document.documentElement.classList[window.isDark ? 'add' : 'remove']("dark");
-                }
-                global_dark();
+            function global_dark(change) {
+              if (change === 'auto') delete localStorage.theme; else if (change === 'on') localStorage.theme = 'dark'; else if (change === 'off') localStorage.theme = 'light';
+              window.isDark = localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+              document.documentElement.classList[window.isDark ? 'add' : 'remove']("dark");
+              var tag = document.createElement("meta"); tag.name = "theme-color";
+              if (window.isDark) tag.content = "#000000"; else tag.content = "#ffffff";
+              document.getElementsByTagName("head")[0].appendChild(tag);
+            }
+            global_dark();
             `,
           }}
-        />
-        <meta
-          name="theme-color"
-          media="(prefers-color-scheme: light)"
-          content="#ffffff"
-        />
-        <meta
-          name="theme-color"
-          media="(prefers-color-scheme: dark)"
-          content="#000000"
         />
         <link rel="icon" type="image/x-icon" href="/favicons/favicon.ico" />
         <link

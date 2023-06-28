@@ -21,7 +21,7 @@ export const handler = async (
       "default-src 'self' stepbrobd.com *.stepbrobd.com; " +
         "child-src 'self' stepbrobd.com *.stepbrobd.com; " +
         "connect-src 'self' stepbrobd.com *.stepbrobd.com plausible.io; " +
-        "font-src 'self' stepbrobd.com *.stepbrobd.com; " +
+        "font-src 'self' stepbrobd.com *.stepbrobd.com cdn.jsdelivr.net; " +
         "frame-src 'self' stepbrobd.com *.stepbrobd.com; " +
         "img-src 'self' stepbrobd.com *.stepbrobd.com heapanalytics.com; " +
         "media-src 'self' stepbrobd.com *.stepbrobd.com; " +

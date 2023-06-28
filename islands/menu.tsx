@@ -5,10 +5,6 @@ import IconChevronDown from "icons/tsx/chevron-down.tsx";
 const Menu = () => {
   const items = [
     {
-      name: "About",
-      href: "/about",
-    },
-    {
       name: "Privacy Policy",
       href: "/privacy-policy",
     },
