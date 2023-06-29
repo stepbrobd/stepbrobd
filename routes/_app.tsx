@@ -10,7 +10,7 @@ const App = ({ Component }: AppProps) => {
         <script
           dangerouslySetInnerHTML={{
             __html: `
-            function global_dark(change) {
+            function dark(change) {
               if (change === 'auto') delete localStorage.theme; else if (change === 'on') localStorage.theme = 'dark'; else if (change === 'off') localStorage.theme = 'light';
               window.isDark = localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
               document.documentElement.classList[window.isDark ? 'add' : 'remove']("dark");
@@ -18,7 +18,7 @@ const App = ({ Component }: AppProps) => {
               if (window.isDark) tag.content = "#000000"; else tag.content = "#ffffff";
               document.getElementsByTagName("head")[0].appendChild(tag);
             }
-            global_dark();
+            dark();
             `,
           }}
         />
