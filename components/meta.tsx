@@ -13,7 +13,7 @@ const Meta = ({
 }) => {
   const defaultTitle = "StepBroBD Inc.";
   const defaultDescription =
-    "Welcome to StepBroBD Inc. official website. Need to get in touch? Checkout our website, or our social media.";
+    "Welcome to StepBroBD Inc. official website. Need to get in touch? Checkout our website, or our social media";
   const defaultImage = "https://stepbrobd.com/assets/og.webp"; // open graph image must have absolute url
   const defaultUrl = "https://stepbrobd.com";
 

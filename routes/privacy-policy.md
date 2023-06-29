@@ -2,7 +2,7 @@
 slug: privacy-policy
 title: Privacy Policy
 date: 2023-06-27
-description: Privacy Policy
+description: StepBroBD Inc. official website Privacy Policy
 ---
 
 # Privacy Policy
