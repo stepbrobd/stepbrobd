@@ -20,7 +20,7 @@ export const handler = async (
       "Content-Security-Policy",
       "default-src 'self' stepbrobd.com *.stepbrobd.com; " +
         "child-src 'self' stepbrobd.com *.stepbrobd.com; " +
-        "connect-src 'self' stepbrobd.com *.stepbrobd.com plausible.io; " +
+        "connect-src 'self' stepbrobd.com *.stepbrobd.com plausible.io client-api.auryc.com mt.auryc.com; " +
         "font-src 'self' stepbrobd.com *.stepbrobd.com cdn.jsdelivr.net; " +
         "frame-src 'self' stepbrobd.com *.stepbrobd.com; " +
         "img-src 'self' stepbrobd.com *.stepbrobd.com heapanalytics.com; " +
@@ -28,7 +28,7 @@ export const handler = async (
         "object-src 'self' stepbrobd.com *.stepbrobd.com; " +
         "script-src 'self' 'unsafe-inline' 'unsafe-eval' stepbrobd.com *.stepbrobd.com cdn.heapanalytics.com plausible.io; " +
         "style-src 'self' 'unsafe-inline' stepbrobd.com *.stepbrobd.com; " +
-        "worker-src 'self' stepbrobd.com *.stepbrobd.com;",
+        "worker-src 'self' blob: stepbrobd.com *.stepbrobd.com;",
     );
   }
 

@@ -54,7 +54,7 @@ const Theme = ({ prev }: { prev: "light" | "dark" | "system" }) => {
         textAlign: "center",
         textAlignLast: "center",
       }}
-      class="border border-black dark:border-white w-24 h-8 rounded-md bg-transparent"
+      class="border border-black dark:border-white w-24 h-8 rounded-md bg-transparent focus:outline-none"
     >
       <option value="system">System</option>
       <option value="light">Light</option>

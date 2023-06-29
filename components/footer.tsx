@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer
       aria-label="footer"
-      class="flex flex-col space-y-8 items-start md:items-center md:flex-row md:justify-between md:space-y-0 w-full px-8 py-8 backdrop-filter backdrop-blur-md backdrop-brightness-75"
+      class="flex flex-col space-y-8 items-start md:items-center md:flex-row md:justify-between md:space-y-0 w-full px-8 py-8 backdrop-filter backdrop-blur-md"
     >
       <div class="flex flex-col space-y-8">
         <div class="flex items-center justify-start h-8">

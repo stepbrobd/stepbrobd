@@ -42,7 +42,7 @@ const Menu = () => {
     <nav ref={menuRef}>
       <button
         aria-label="menu"
-        class="h-8 w-8 flex items-center justify-center relative"
+        class="h-8 w-8 flex items-center justify-center relative focus:outline-none"
         onClick={handleIconClick}
       >
         <IconMenu
@@ -58,7 +58,7 @@ const Menu = () => {
       </button>
 
       <div
-        class={`absolute left-0 mt-2 w-screen z-50 backdrop-filter backdrop-blur-md backdrop-brightness-75 flex py-2 px-8 transition-all duration-500 ease-in-out ${
+        class={`absolute left-0 mt-2 w-screen z-50 backdrop-filter backdrop-blur-md flex py-2 px-8 transition-all duration-500 ease-in-out ${
           isOpen ? "opacity-100" : "opacity-0"
         }`}
       >
