@@ -45,27 +45,20 @@ const Menu = () => {
         class="h-8 w-8 flex items-center justify-center relative focus:outline-none"
         onClick={handleIconClick}
       >
-        <IconMenu
-          class={`absolute transition-all duration-500 ease-in-out ${
-            isOpen ? "opacity-0" : "opacity-100"
-          }`}
-        />
+        <IconMenu class={`absolute ${isOpen ? "opacity-0" : "opacity-100"}`} />
         <IconChevronDown
-          class={`absolute transition-all duration-500 ease-in-out ${
-            isOpen ? "opacity-100 transform" : "opacity-0 transform"
-          }`}
+          class={`absolute ${isOpen ? "opacity-100" : "opacity-0"}`}
         />
       </button>
-
       <div
-        class={`absolute left-0 mt-2 w-screen z-50 backdrop-filter backdrop-blur-md flex py-2 px-8 transition-all duration-500 ease-in-out ${
-          isOpen ? "opacity-100" : "opacity-0"
+        class={`absolute left-0 mt-2 w-screen z-50 backdrop-filter backdrop-blur-md flex py-2 px-8 transition-opacity duration-500 ease-in-out ${
+          isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
-        <div class="grid grid-cols-1 gap-4 w-full">
+        <div class="grid grid-cols-1 gap-4 w-full transition-colors transition-opacity duration-500 ease-in-out">
           {items.map((item, index) => (
             <a
-              class={`w-full h-8 text-start text-lg font-bold transition-all duration-500 ease-in-out delay-${
+              class={`w-full h-8 text-start text-lg font-bold transition-colors transition-opacity duration-500 ease-in-out delay-${
                 isOpen ? index * 100 : (items.length - 1 - index) * 100
               } ${isOpen ? "opacity-100" : "opacity-0"}`}
               href={item.href}

@@ -131,7 +131,7 @@ const App = ({ Component }: AppProps) => {
         <meta property="og:locale" content="en_US" />
         <meta property="twitter:card" content="summary_large_image" />
       </Head>
-      <body class="flex flex-col h-screen bg-white text-black dark:bg-black dark:text-white">
+      <body class="flex flex-col h-screen bg-white text-black dark:bg-black dark:text-white transition-all duration-500 ease-in-out">
         <Header />
         <main
           class="flex flex-col flex-grow justify-center items-center"

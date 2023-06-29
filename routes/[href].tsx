@@ -74,7 +74,7 @@ const Page = (props: PageProps<Page>) => {
           data-color-mode="system"
           data-light-theme="light"
           data-dark-theme="dark"
-          class="markdown-body prose prose-neutral bg-white text-black dark:bg-black dark:text-white pt-4"
+          class="markdown-body prose prose-neutral bg-white text-black dark:bg-black dark:text-white pt-4 transition-all duration-500 ease-in-out"
           dangerouslySetInnerHTML={{
             __html: render(page.content, {
               baseUrl: "https://stepbrobd.com",
