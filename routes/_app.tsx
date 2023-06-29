@@ -133,7 +133,10 @@ const App = ({ Component }: AppProps) => {
       </Head>
       <body class="flex flex-col h-screen bg-white text-black dark:bg-black dark:text-white">
         <Header />
-        <main class="flex-grow" aria-label="content">
+        <main
+          class="flex flex-col flex-grow justify-center items-center"
+          aria-label="content"
+        >
           <Component />
         </main>
         <Footer />

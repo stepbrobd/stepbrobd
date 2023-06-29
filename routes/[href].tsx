@@ -62,7 +62,7 @@ const Page = (props: PageProps<Page>) => {
         image={page.og}
         url={props.url.href}
       />
-      <article class="max-w-screen-md md:mx-auto mx-8 py-8">
+      <article class="max-w-screen-md px-8 py-8">
         <time class="text-gray-500 dark:text-gray-400 text-sm">
           {new Date(page.date).toLocaleDateString("en-us", {
             year: "numeric",
