@@ -3,6 +3,7 @@ slug: terms-of-service
 title: Terms of Service
 date: 2023-06-27
 description: StepBroBD Inc. official website Terms of Service
+og: https://stepbrobd.com/assets/og.webp
 ---
 
 # Terms of Service

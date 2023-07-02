@@ -1,8 +1,7 @@
 import { MiddlewareHandlerContext } from "$fresh/server.ts";
 
 export const handler = async (
-  // deno-lint-ignore no-unused-vars
-  req: Request,
+  _req: Request,
   ctx: MiddlewareHandlerContext,
 ) => {
   const res = await ctx.next();
