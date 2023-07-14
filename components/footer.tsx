@@ -1,11 +1,13 @@
 import Logo from "$components/logo.tsx";
 import Theme from "$islands/theme.tsx";
 
-import IconBrandDeno from "icons/tsx/brand-deno.tsx";
-import IconBrandGithub from "icons/tsx/brand-github.tsx";
-import IconBrandTwitter from "icons/tsx/brand-twitter.tsx";
-import IconBrandInstagram from "icons/tsx/brand-instagram.tsx";
-import IconBrandYoutube from "icons/tsx/brand-youtube.tsx";
+import {
+  IconBrandDeno,
+  IconBrandGithub,
+  IconBrandThreads,
+  IconBrandTwitter,
+  IconBrandYoutube,
+} from "icons";
 
 const Footer = () => {
   return (
@@ -44,12 +46,12 @@ const Footer = () => {
             <IconBrandTwitter />
           </a>
           <a
-            href="https://instagram.com/stepbrobd"
+            href="https://www.threads.net/@stepbrobd"
             target="_blank"
             class="inline-block"
             aria-label="Instagram"
           >
-            <IconBrandInstagram />
+            <IconBrandThreads />
           </a>
           <a
             href="https://www.youtube.com/@stepbrobd"

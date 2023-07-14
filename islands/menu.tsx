@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "preact/hooks";
-import IconMenu from "icons/tsx/menu.tsx";
-import IconChevronDown from "icons/tsx/chevron-down.tsx";
+import { IconChevronDown, IconMenu } from "icons";
 
 const Menu = () => {
   const items = [
