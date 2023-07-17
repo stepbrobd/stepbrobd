@@ -1,0 +1,30 @@
+{
+    "name": "com-stepbrobd-web",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "eslint \"**/*.{js,jsx,ts,tsx,md,mdx}\"",
+        "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,mdx}\""
+    },
+    "dependencies": {
+        "next": "^13.4.10",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "com-stepbrobd-ui": "workspace:*"
+    },
+    "devDependencies": {
+        "@types/node": "^20.4.2",
+        "@types/react": "^18.2.15",
+        "@types/react-dom": "^18.2.7",
+        "autoprefixer": "^10.4.14",
+        "postcss": "^8.4.26",
+        "com-stepbrobd-eslint": "workspace:*",
+        "com-stepbrobd-prettier": "workspace:*",
+        "com-stepbrobd-tailwind": "workspace:*",
+        "com-stepbrobd-tsconfig": "workspace:*",
+        "tailwindcss": "^3.3.3",
+        "typescript": "^5.1.6"
+    }
+}
