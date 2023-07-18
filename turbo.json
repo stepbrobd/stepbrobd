@@ -1,0 +1,28 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+
+  "globalDependencies": [
+    "**/.env*",
+
+    "**/.eslint*",
+    "**/.prettier*",
+    "**/tsconfig.json",
+
+    "**/package.json",
+    "**/pnpm-lock.yaml",
+    "**/pnpm-workspace.yaml"
+  ],
+
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {},
+    "format": {}
+  }
+}

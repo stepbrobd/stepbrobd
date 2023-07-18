@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "turbo run format"
+  },
+  "devDependencies": {
+    "eslint": "^8.45.0",
+    "prettier": "^3.0.0",
+    "com-stepbrobd-eslint": "workspace:*",
+    "com-stepbrobd-prettier": "workspace:*",
+    "turbo": "^1.10.8"
+  },
+  "packageManager": "pnpm@7.15.0"
+}
