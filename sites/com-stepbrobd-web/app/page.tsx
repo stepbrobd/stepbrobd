@@ -1,5 +1,5 @@
+import Theme from "components/theme";
 import { Metadata } from "next";
-import { Button } from "com-stepbrobd-ui";
 
 const metadata: Metadata = {
   title: "Web - Turborepo Example",
@@ -8,8 +8,7 @@ const metadata: Metadata = {
 const Page = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      123321
-      <Button />
+      <Theme />
     </div>
   );
 };
