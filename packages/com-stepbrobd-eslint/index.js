@@ -12,6 +12,13 @@ module.exports = {
     "react-hooks/exhaustive-deps": "error",
   },
 
+  overrides: [
+    {
+      files: "*.mdx",
+      parser: "eslint-mdx",
+    },
+  ],
+
   parserOptions: {
     babelOptions: {
       presets: [require.resolve("next/babel")],
