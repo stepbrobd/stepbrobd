@@ -22,11 +22,11 @@ const Theme = () => {
     <div
       role="radiogroup"
       aria-label="Theme"
-      className="flex items-center space-x-2 overflow-auto rounded-full border border-neutral-100 p-1 dark:border-neutral-800"
+      className="flex items-center space-x-2 overflow-auto rounded-full border border-neutral-200 p-1 dark:border-neutral-800"
     >
       {options.map(({ label, value, icon: Icon }) => {
-        const className = `flex h-8 w-8 items-center justify-center rounded-full hover:bg-neutral-100 dark:hover:bg-neutral-800 ${
-          mounted && theme === value ? "bg-neutral-100 dark:bg-neutral-800" : ""
+        const className = `flex h-8 w-8 items-center justify-center rounded-full hover:bg-neutral-200 dark:hover:bg-neutral-800 ${
+          mounted && theme === value ? "bg-neutral-200 dark:bg-neutral-800" : ""
         }`;
 
         const onClick = mounted ? () => setTheme(value) : undefined;
