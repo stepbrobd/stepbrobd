@@ -1,4 +1,3 @@
-import Cobe from "components/cobe";
 import { Metadata } from "next";
 
 const metadata: Metadata = {
@@ -6,11 +5,7 @@ const metadata: Metadata = {
 };
 
 const Page = () => {
-  return (
-    <div className="flex flex-col items-center justify-center">
-      <Cobe />
-    </div>
-  );
+  return <></>;
 };
 
 export { metadata };
