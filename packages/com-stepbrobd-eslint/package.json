@@ -11,6 +11,6 @@
     "eslint-plugin-simple-import-sort": "^10.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.4.3"
+    "@types/node": "^20.4.4"
   }
 }

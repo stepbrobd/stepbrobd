@@ -12,9 +12,9 @@ const Progress = () => {
 
   return (
     <NextTopLoader
-      color={resolvedTheme === "dark" ? "#f81ce5" : "#aaffec"}
       showSpinner={false}
-      height={2.5}
+      color={resolvedTheme === "dark" ? "#f81ce5" : "#aaffec"}
+      height={resolvedTheme === "dark" ? 2.5 : 5}
     />
   );
 };
