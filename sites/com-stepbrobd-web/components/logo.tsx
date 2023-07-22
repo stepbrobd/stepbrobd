@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import LogoImage from "public/assets/stepbrobd.webp";
 
 const Asset = ({
   size,
@@ -19,13 +20,7 @@ const Asset = ({
       className={`${size} rounded-full`}
     />
   ) : (
-    <Image
-      src="/assets/stepbrobd.webp"
-      width={256}
-      height={256}
-      alt={alt}
-      className={`${size} rounded-full`}
-    />
+    <Image src={LogoImage} alt={alt} className={`${size} rounded-full`} />
   );
 
 const Logo = ({
