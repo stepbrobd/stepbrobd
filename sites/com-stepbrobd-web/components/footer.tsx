@@ -65,8 +65,8 @@ const Footer = () => {
 
   return (
     <footer
-      aria-label="footer"
       className="w-full space-y-8 border-t border-neutral-200 px-8 py-16 text-neutral-700 backdrop-blur-md backdrop-filter dark:border-neutral-800 dark:text-neutral-300"
+      aria-label="Footer"
     >
       <nav className="grid grid-cols-1 gap-8 md:grid-cols-4">
         <div className="flex items-center justify-center md:items-start md:justify-start">

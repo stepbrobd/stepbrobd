@@ -7,11 +7,11 @@
     "format": "turbo run format"
   },
   "devDependencies": {
-    "eslint": "^8.45.0",
-    "prettier": "^3.0.0",
     "com-stepbrobd-eslint": "workspace:*",
     "com-stepbrobd-prettier": "workspace:*",
-    "turbo": "^1.10.8"
+    "eslint": "^8.45.0",
+    "prettier": "^3.0.0",
+    "turbo": "^1.10.9"
   },
   "packageManager": "pnpm@7.15.0"
 }
