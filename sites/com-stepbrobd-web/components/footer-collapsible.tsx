@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
@@ -16,7 +16,6 @@ const FooterCollapsible = ({
   const [open, setOpen] = useState(isMdScreen);
 
   const pathname = usePathname();
-  const searchParams = useSearchParams();
 
   useEffect(() => {
     setIsMounted(true);
@@ -24,7 +23,7 @@ const FooterCollapsible = ({
 
   useEffect(() => {
     setOpen(isMdScreen);
-  }, [pathname, searchParams, isMdScreen]);
+  }, [pathname, isMdScreen]);
 
   const handleToggle = () => {
     if (!isMdScreen) {
