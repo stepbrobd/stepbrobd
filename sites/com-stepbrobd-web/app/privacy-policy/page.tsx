@@ -9,7 +9,7 @@ const metadata: Metadata = {
 
 const Page = () => (
   <article className="max-w-3xl place-self-center px-8 py-8">
-    <time className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+    <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
       {
         // @ts-ignore
         new Date(metadata.date).toLocaleDateString("en-US", {
@@ -18,7 +18,7 @@ const Page = () => (
           day: "numeric",
         })
       }
-    </time>
+    </p>
     <Content />
   </article>
 );

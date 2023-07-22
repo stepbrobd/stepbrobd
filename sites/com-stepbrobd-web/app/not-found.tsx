@@ -1,39 +1,12 @@
-import "com-stepbrobd-tailwind/tailwind.css";
-import "com-stepbrobd-ui/tailwind.css";
-
-import { Analytics } from "@vercel/analytics/react";
-import { Providers } from "app/providers";
-import Footer from "components/footer";
-import Header from "components/header";
-import Progress from "components/progress";
+import { Heading, P } from "com-stepbrobd-ui";
+import Image from "components/image";
 import { Metadata } from "next";
-import { Inter, JetBrains_Mono, Tinos } from "next/font/google";
-import Script from "next/script";
-
-const serif = Tinos({
-  weight: ["400", "700"],
-  subsets: ["latin", "latin-ext"],
-  variable: "--font-tinos",
-  display: "swap",
-});
-const sans = Inter({
-  weight: ["400", "700"],
-  subsets: ["latin", "latin-ext"],
-  variable: "--font-inter",
-  display: "swap",
-});
-const mono = JetBrains_Mono({
-  weight: ["400", "700"],
-  subsets: ["latin", "latin-ext"],
-  variable: "--font-jetbrains-mono",
-  display: "swap",
-});
+import NotFoundImage from "public/assets/404.webp";
 
 const metadata: Metadata = {
-  title: {
-    default: "StepBroBD Inc.",
-    template: "%s | StepBroBD Inc.",
-  },
+  title: "Not Found | StepBroBD Inc.",
+  description:
+    "The page you are looking for does not exist. Either we are performing site maintenance or you might have mistyped the URL.",
   icons: [
     {
       rel: "icon",
@@ -161,43 +134,24 @@ const metadata: Metadata = {
   ],
 };
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
+const NotFound = () => {
   return (
-    <html
-      suppressHydrationWarning
-      lang="en-US"
-      className={`${serif.variable} ${sans.variable} ${mono.variable}`}
-    >
-      <body className="flex min-h-screen flex-col border-neutral-200 bg-white text-neutral-800 selection:bg-[#aaffec] dark:border-neutral-800 dark:bg-black dark:text-neutral-200 dark:selection:bg-[#f81ce5]">
-        <Providers>
-          <Progress />
-          <Header />
-          <main className="flex grow flex-col" aria-label="Content">
-            {children}
-          </main>
-          <Footer />
-        </Providers>
-        <Analytics />
-        <Script
-          defer
-          data-domain="stepbrobd.com"
-          id="plausible-analytics"
-          src="https://plausible.io/js/script.js"
-        />
-        <Script
-          defer
-          id="heap-analytics"
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
-            heap.load("321254199");
-          `,
-          }}
-        />
-      </body>
-    </html>
+    <article className="max-w-3xl place-self-center px-8 py-8">
+      <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+        HTTP 404 - Not Found
+      </p>
+      <Heading.H1>Not Found</Heading.H1>
+      <P>
+        The page you are looking for does not exist. Either we are performing
+        site maintenance or you might have mistyped the URL.
+      </P>
+      <Image
+        src={NotFoundImage}
+        alt='DALL·E: "HTTP 404 Not Found, depicted as a cute kitten hiding in a pile of newspapers, digital art."'
+      />
+    </article>
   );
 };
 
 export { metadata };
-export default Layout;
+export default NotFound;
