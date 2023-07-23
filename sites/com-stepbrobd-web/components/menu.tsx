@@ -7,12 +7,12 @@ const Menu = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <div>
+    <div className="scale-[0.4167]">
       <Hamburger
         rounded
         toggled={isOpen}
         toggle={setOpen}
-        size={20}
+        size={48}
         duration={0.25}
         label="Menu"
       />

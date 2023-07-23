@@ -22,28 +22,27 @@ const Theme = () => {
     <div
       role="radiogroup"
       aria-label="Theme"
-      className={`flex items-center space-x-2 overflow-auto rounded-full border border-neutral-200 p-1 dark:border-neutral-800 ${
-        mounted ? "" : "animate-pulse bg-neutral-200 dark:bg-neutral-800"
+      className={`h-[42px] w-[122px] rounded-full border border-neutral-200 dark:border-neutral-800 ${
+        mounted
+          ? "flex items-center space-x-2 overflow-auto p-1 "
+          : "animate-pulse bg-neutral-200 dark:bg-neutral-800"
       }`}
     >
-      {options.map(({ label, value, icon: Icon }) => {
-        const className = `flex h-8 w-8 items-center justify-center rounded-full hover:bg-neutral-200 dark:hover:bg-neutral-800 ${
-          mounted && theme === value ? "bg-neutral-200 dark:bg-neutral-800" : ""
-        }`;
-
-        const onClick = mounted ? () => setTheme(value) : undefined;
-
-        return (
-          <button
-            key={value}
-            aria-label={label}
-            className={className}
-            onClick={onClick}
-          >
-            <Icon size={16} />
-          </button>
-        );
-      })}
+      {mounted &&
+        options.map(({ label, value, icon: Icon }) => {
+          return (
+            <button
+              key={value}
+              aria-label={label}
+              onClick={() => setTheme(value)}
+              className={`flex h-8 w-8 items-center justify-center rounded-full hover:bg-neutral-200 dark:hover:bg-neutral-800 ${
+                theme === value ? "bg-neutral-200 dark:bg-neutral-800" : ""
+              }`}
+            >
+              <Icon size={16} />
+            </button>
+          );
+        })}
     </div>
   );
 };
