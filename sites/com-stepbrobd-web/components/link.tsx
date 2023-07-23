@@ -5,7 +5,10 @@ const Link = ({ href, className, children }) => {
     return (
       <a
         href={href.toString()}
-        className={className}
+        className={
+          "text-neutral-600 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200 " +
+          className
+        }
         target="_blank"
         rel="noopener noreferrer"
       >

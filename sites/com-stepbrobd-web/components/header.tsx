@@ -1,4 +1,5 @@
 import Logo from "components/logo";
+import Menu from "components/menu";
 
 const Header = () => {
   return (
@@ -9,7 +10,9 @@ const Header = () => {
       <div className="flex h-8 items-center justify-start">
         <Logo size="small" />
       </div>
-      <div className="flex h-8 items-center justify-end"></div>
+      <div className="flex h-8 items-center justify-end">
+        <Menu />
+      </div>
     </header>
   );
 };

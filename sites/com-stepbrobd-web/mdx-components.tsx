@@ -1,4 +1,6 @@
 import { Heading, List, P } from "com-stepbrobd-ui";
+import Image from "components/image";
+import Link from "components/link";
 import type { MDXComponents } from "mdx/types";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
@@ -10,6 +12,8 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h5: Heading.H5,
     h6: Heading.H6,
     p: P,
+    a: Link,
+    img: Image,
     ul: List.Unordered,
     ol: List.Ordered,
     li: List.Item,

@@ -5,7 +5,6 @@ import {
   IconBrandTwitter,
   IconBrandYoutube,
 } from "@tabler/icons-react";
-import FooterCollapsible from "components/footer-collapsible";
 import Link from "components/link";
 import Logo from "components/logo";
 import Theme from "components/theme";
@@ -72,23 +71,22 @@ const Footer = () => {
         <div className="flex items-center justify-center md:items-start md:justify-start">
           <Logo StepBroBD size="small" />
         </div>
-
         {links.map(({ name, items }) => (
-          <FooterCollapsible key={name} title={name}>
-            {items.map(({ name, href }) => (
-              <li key={name}>
-                <Link
-                  className="text-sm text-neutral-600 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200"
-                  href={href}
-                >
-                  {name}
-                </Link>
-              </li>
-            ))}
-          </FooterCollapsible>
+          <div className="space-y-4" key={name}>
+            <h2 className={`font-bold`}>{name}</h2>
+            <ul className="space-y-2 pl-2 text-neutral-600 dark:text-neutral-400 md:pl-0">
+              {items.map(({ name, href }) => (
+                <li key={name}>
+                  <Link className="text-sm" href={href}>
+                    {name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <hr className="block border-neutral-200 dark:border-neutral-800 md:hidden" />
+          </div>
         ))}
       </nav>
-
       <section className="flex flex-col items-center space-y-8 md:flex-row md:items-end md:justify-between md:space-y-0">
         <div className="space-y-4">
           <span>
@@ -111,7 +109,6 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-
         <Theme />
       </section>
     </footer>
