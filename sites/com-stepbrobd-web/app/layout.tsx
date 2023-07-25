@@ -1,5 +1,6 @@
 import "com-stepbrobd-tailwind/tailwind.css";
 import "com-stepbrobd-ui/tailwind.css";
+import "app/tailwind.css";
 
 import { Analytics } from "@vercel/analytics/react";
 import { Providers } from "app/providers";

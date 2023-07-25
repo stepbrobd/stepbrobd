@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  [aria-hidden="true"] {
+    @apply sr-only;
+  }
+
+  math {
+    @apply text-base leading-normal;
+  }
+
+  pre,
+  code {
+    @apply font-mono text-base;
+  }
+
+  pre {
+    @apply mb-2 overflow-x-auto;
+  }
+
+  [data-theme="light"] {
+    @apply block bg-white dark:hidden;
+  }
+
+  [data-theme="dark"] {
+    @apply hidden bg-black dark:block;
+  }
+}
