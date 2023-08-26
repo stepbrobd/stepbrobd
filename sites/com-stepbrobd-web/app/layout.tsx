@@ -32,8 +32,8 @@ const mono = JetBrains_Mono({
 
 const metadata: Metadata = {
   title: {
-    default: "StepBroBD Inc.",
-    template: "%s | StepBroBD Inc.",
+    default: "StepBroBD, Inc.",
+    template: "%s | StepBroBD, Inc.",
   },
   icons: [
     {

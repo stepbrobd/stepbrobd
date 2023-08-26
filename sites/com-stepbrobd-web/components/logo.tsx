@@ -39,18 +39,18 @@ const Logo = ({
   };
 
   return (
-    <Link href="/" aria-label="StepBroBD Inc." className="hover:no-underline">
+    <Link href="/" aria-label="StepBroBD, Inc." className="hover:no-underline">
       <div className="flex select-none items-center">
         <Asset
           size={sizes[size].asset}
-          alt="StepBroBD Inc."
+          alt="StepBroBD, Inc."
           animated={animated}
         />
         {StepBroBD && (
           <div
             className={`${sizes[size].text} whitespace-nowrap font-bold tracking-tight`}
           >
-            StepBroBD Inc.
+            StepBroBD, Inc.
           </div>
         )}
       </div>

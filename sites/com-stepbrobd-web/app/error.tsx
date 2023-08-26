@@ -6,7 +6,7 @@ import { Metadata } from "next";
 import InternalServerErrorImage from "public/assets/500.webp";
 
 const metadata: Metadata = {
-  title: "Internal Server Error | StepBroBD Inc.",
+  title: "Internal Server Error | StepBroBD, Inc.",
   description:
     "The page you are looking for caused an error on our server. This incident has been reported and a fix will be released soon.",
   icons: [

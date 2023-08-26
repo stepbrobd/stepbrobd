@@ -21,7 +21,7 @@ const Footer = () => {
     {
       name: "Explore",
       items: [
-        { name: "StepBroBD Inc.", href: "https://stepbrobd.com" },
+        { name: "StepBroBD, Inc.", href: "https://stepbrobd.com" },
         { name: "Viral Vision LLC.", href: "https://viral.vision" },
       ],
     },
@@ -91,7 +91,7 @@ const Footer = () => {
         <div className="space-y-4">
           <span>
             <p className="items-center justify-start text-center text-sm md:text-start">
-              &copy; {new Date().getFullYear()} StepBroBD Inc.
+              &copy; {new Date().getFullYear()} StepBroBD, Inc.
             </p>
           </span>
           <ul className="flex flex-row space-x-4">

@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import NotFoundImage from "public/assets/404.webp";
 
 const metadata: Metadata = {
-  title: "Not Found | StepBroBD Inc.",
+  title: "Not Found | StepBroBD, Inc.",
   description:
     "The page you are looking for does not exist. Either we are performing site maintenance or you might have mistyped the URL.",
   icons: [

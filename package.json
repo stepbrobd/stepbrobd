@@ -9,9 +9,9 @@
   "devDependencies": {
     "com-stepbrobd-eslint": "workspace:*",
     "com-stepbrobd-prettier": "workspace:*",
-    "eslint": "^8.45.0",
-    "prettier": "^3.0.0",
-    "turbo": "^1.10.12"
+    "eslint": "^8.48.0",
+    "prettier": "^3.0.2",
+    "turbo": "^1.10.13"
   },
   "packageManager": "pnpm@7.15.0"
 }

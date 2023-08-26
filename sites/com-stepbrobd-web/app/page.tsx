@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 const metadata: Metadata = {
-  title: "StepBroBD Inc.",
+  title: "StepBroBD, Inc.",
 };
 
 const Page = () => {
