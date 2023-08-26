@@ -22,7 +22,7 @@ const Footer = () => {
       name: "Explore",
       items: [
         { name: "StepBroBD, Inc.", href: "https://stepbrobd.com" },
-        { name: "Viral Vision LLC.", href: "https://viral.vision" },
+        { name: "Viral Vision, LLC.", href: "https://viral.vision" },
       ],
     },
     {
