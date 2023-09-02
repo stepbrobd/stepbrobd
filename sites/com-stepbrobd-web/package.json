@@ -23,12 +23,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rehype-katex": "^6.0.3",
-    "rehype-pretty-code": "^0.10.0",
+    "rehype-pretty-code": "^0.10.1",
     "remark-math": "^5.1.1",
-    "shiki": "^0.14.3"
+    "shiki": "^0.14.4"
   },
   "devDependencies": {
-    "@types/node": "^20.5.6",
+    "@types/node": "^20.5.8",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "autoprefixer": "^10.4.15",
@@ -36,7 +36,7 @@
     "com-stepbrobd-prettier": "workspace:*",
     "com-stepbrobd-tailwind": "workspace:*",
     "com-stepbrobd-tsconfig": "workspace:*",
-    "postcss": "^8.4.28",
+    "postcss": "^8.4.29",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.2.2"
   }
