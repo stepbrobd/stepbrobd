@@ -1,0 +1,40 @@
+{
+    "name": "com-stepbrobd-as10779",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "eslint --fix \"**/*.{js,jsx,ts,tsx,md,mdx}\"",
+        "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,mdx}\""
+    },
+    "dependencies": {
+        "@tabler/icons-react": "^2.32.0",
+        "@vercel/analytics": "^1.0.2",
+        "@vercel/og": "^0.5.13",
+        "com-stepbrobd-ui": "workspace:*",
+        "next": "^13.4.19",
+        "nextra": "^2.12.3",
+        "nextra-theme-docs": "^2.12.3",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@types/node": "20.5.9",
+        "@types/react": "^18.2.21",
+        "autoprefixer": "^10.4.15",
+        "com-stepbrobd-eslint": "workspace:*",
+        "com-stepbrobd-prettier": "workspace:*",
+        "com-stepbrobd-tailwind": "workspace:*",
+        "com-stepbrobd-tsconfig": "workspace:*",
+        "eslint": "^8.48.0",
+        "eslint-config-next": "^13.4.19",
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-plugin-simple-import-sort": "^10.0.0",
+        "postcss": "^8.4.29",
+        "prettier": "^3.0.3",
+        "prettier-plugin-tailwindcss": "^0.5.4",
+        "tailwindcss": "^3.3.3",
+        "typescript": "5.2.2"
+    }
+}
