@@ -57,7 +57,9 @@ const config: DocsThemeConfig = {
     const { frontMatter } = useConfig();
     const { asPath, defaultLocale, locale } = useRouter();
 
-    const title = `${frontMatter.title} - AS10779 - StepBroBD, Inc.` || "AS10779 - StepBroBD, Inc.";
+    const title =
+      `${frontMatter.title} - AS10779 - StepBroBD, Inc.` ||
+      "AS10779 - StepBroBD, Inc.";
     const url =
       "https://as10779.net" +
       (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
@@ -86,7 +88,6 @@ const config: DocsThemeConfig = {
           sizes="96x96"
           href="/favicons/favicon-96x96.png"
         />
-
 
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />

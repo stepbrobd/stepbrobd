@@ -5,7 +5,7 @@ import {
   IconBrandX,
   IconBrandYoutube,
 } from "@tabler/icons-react";
-import Logo from "components/logo"
+import Logo from "components/logo";
 
 const Footer = () => {
   return (
@@ -22,7 +22,7 @@ const Footer = () => {
         <a
           href="https://stepbrobd.com/terms-of-service"
           target="_blank"
-          className="inline-block border-l rounded-l-none dark:border-neutral-800 ml-3 pl-3"
+          className="ml-3 inline-block rounded-l-none border-l pl-3 dark:border-neutral-800"
           aria-label="Terms of Service"
         >
           Terms

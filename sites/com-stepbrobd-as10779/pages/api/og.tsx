@@ -24,9 +24,7 @@ export default async function handler(request: NextRequest) {
 
     // ?text=<text>
     const hasText = searchParams.has("text");
-    const text = hasText
-      ? searchParams.get("text")?.slice(0, 100)
-      : "AS10779";
+    const text = hasText ? searchParams.get("text")?.slice(0, 100) : "AS10779";
 
     return new ImageResponse(
       (
