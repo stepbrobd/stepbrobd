@@ -2,7 +2,7 @@ import {
   IconBrandDiscord,
   IconBrandGithub,
   IconBrandThreads,
-  IconBrandTwitter,
+  IconBrandX,
   IconBrandYoutube,
 } from "@tabler/icons-react";
 import Link from "components/link";
@@ -46,9 +46,9 @@ const Footer = () => {
       icon: IconBrandDiscord,
     },
     {
-      name: "Twitter",
-      href: "https://twitter.com/stepbrobd",
-      icon: IconBrandTwitter,
+      name: "X",
+      href: "https://x.com/stepbrobd",
+      icon: IconBrandX,
     },
     {
       name: "Threads",
@@ -57,7 +57,7 @@ const Footer = () => {
     },
     {
       name: "YouTube",
-      href: "https://www.youtube.com/@stepbrobd",
+      href: "https://youtube.com/@stepbrobd",
       icon: IconBrandYoutube,
     },
   ];

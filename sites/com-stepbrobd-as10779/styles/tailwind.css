@@ -3,30 +3,49 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-        font-family: "Inter", system-ui, sans-serif;
-        @apply antialiased;
-        @apply selection:bg-[#f81ce5];
-    }
+  html {
+    font-family: "Inter", system-ui, sans-serif;
+    @apply selection:bg-[#aaffec] dark:selection:bg-[#f81ce5];
+  }
 
-    * {
-        box-sizing: border-box;
-    }
+  * {
+    box-sizing: border-box;
+  }
 
-    a {
-        text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
 
-    img {
-        @apply rounded-lg;
-    }
+  [aria-hidden="true"] {
+    @apply sr-only;
+  }
 
-    pre,
-    code {
-        @apply font-mono antialiased;
-    }
+  img {
+    @apply rounded-lg;
+  }
 
-    blockquote {
-        @apply font-serif italic antialiased;
-    }
+  math {
+    @apply text-base leading-normal;
+  }
+
+  pre,
+  code {
+    @apply font-mono text-base;
+  }
+
+  pre {
+    @apply mb-2 overflow-x-auto;
+  }
+
+  blockquote {
+    @apply font-serif italic;
+  }
+
+  [data-theme="light"] {
+    @apply block bg-white dark:hidden;
+  }
+
+  [data-theme="dark"] {
+    @apply hidden bg-black dark:block;
+  }
 }

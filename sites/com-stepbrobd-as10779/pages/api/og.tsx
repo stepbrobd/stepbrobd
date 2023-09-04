@@ -26,7 +26,7 @@ export default async function handler(request: NextRequest) {
     const hasText = searchParams.has("text");
     const text = hasText
       ? searchParams.get("text")?.slice(0, 100)
-      : "Yifei Sun";
+      : "AS10779";
 
     return new ImageResponse(
       (

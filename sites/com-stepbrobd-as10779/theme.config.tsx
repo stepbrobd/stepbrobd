@@ -44,12 +44,12 @@ const config: DocsThemeConfig = {
     component: () => <></>,
   },
 
-  logo: <Logo />,
-  logoLink: "/",
+  logo: <Logo StepBroBD size="small" />,
+  logoLink: false,
 
   useNextSeoProps() {
     return {
-      titleTemplate: "%s – Yifei Sun",
+      titleTemplate: "%s – AS10779 - StepBroBD, Inc.",
     };
   },
 
@@ -57,33 +57,36 @@ const config: DocsThemeConfig = {
     const { frontMatter } = useConfig();
     const { asPath, defaultLocale, locale } = useRouter();
 
-    const title = `${frontMatter.title} - Yifei Sun` || "Yifei Sun";
+    const title = `${frontMatter.title} - AS10779 - StepBroBD, Inc.` || "AS10779 - StepBroBD, Inc.";
     const url =
-      "https://ysun.co" +
+      "https://as10779.net" +
       (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
     const description =
       frontMatter.description ||
-      "Yifei Sun is a graduate student at Northeastern University studying computer science. His research interests are 1. Formal verification for distributed systems and database systems. 2. Programming language and concurrent data structure related formal verification and fuzz testing. 3. IMU data feature extraction and machine learning for robotic systems and healthcare applications.";
+      "AS10779, an autonomous system operated by StepBroBD, Inc. under ARIN. This site contains StepBroBD. Inc.'s policy about it's network, including peering, routing, and more.";
 
     return (
       <>
+        <link rel="icon" type="image/x-icon" href="/favicons/favicon.ico" />
         <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicons/favicon-16x16.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon-32x32.png"
+          href="/favicons/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
+          sizes="96x96"
+          href="/favicons/favicon-96x96.png"
         />
+
 
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
@@ -99,14 +102,14 @@ const config: DocsThemeConfig = {
 
         <meta
           property="og:image"
-          content={`https://ysun.co/api/og?text=${frontMatter.title.replaceAll(
+          content={`https://as10779.net/api/og?text=${frontMatter.title.replaceAll(
             " ",
             "%20",
           )}`}
         />
         <meta
           property="twitter:image"
-          content={`https://ysun.co/api/og?text=${frontMatter.title.replaceAll(
+          content={`https://as10779.net/api/og?text=${frontMatter.title.replaceAll(
             " ",
             "%20",
           )}`}

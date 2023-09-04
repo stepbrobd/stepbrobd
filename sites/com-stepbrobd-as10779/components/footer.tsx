@@ -1,38 +1,39 @@
 import {
+  IconBrandDiscord,
   IconBrandGithub,
-  IconBrandLinkedin,
   IconBrandThreads,
-  IconBrandTwitter,
-  IconCreativeCommons,
-  IconCreativeCommonsBy,
-  IconCreativeCommonsNc,
-  IconMail,
+  IconBrandX,
+  IconBrandYoutube,
 } from "@tabler/icons-react";
+import Logo from "components/logo"
 
 const Footer = () => {
   return (
     <div className="flex flex-col items-center space-y-6 md:items-start">
+      <div className="flex flex-row text-xs">
+        <a
+          href="https://stepbrobd.com/privacy-policy"
+          target="_blank"
+          className="inline-block"
+          aria-label="Privacy Policy"
+        >
+          Privacy
+        </a>
+        <a
+          href="https://stepbrobd.com/terms-of-service"
+          target="_blank"
+          className="inline-block border-l rounded-l-none dark:border-neutral-800 ml-3 pl-3"
+          aria-label="Terms of Service"
+        >
+          Terms
+        </a>
+      </div>
+
       <small className="h-5">
-        &copy; {new Date().getFullYear()} Yifei Sun. Some rights reserved.
+        &copy; {new Date().getFullYear()} StepBroBD, Inc.
       </small>
 
-      <div className="flex h-5 flex-row items-center justify-center space-x-3">
-        <a
-          href="mailto:hi@ysun.co"
-          target="_blank"
-          className="inline-block"
-          aria-label="Mail"
-        >
-          <IconMail size={20} />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/yifei-s"
-          target="_blank"
-          className="inline-block"
-          aria-label="LinkedIn"
-        >
-          <IconBrandLinkedin size={20} />
-        </a>
+      <div className="flex h-5 flex-row items-center justify-center space-x-4">
         <a
           href="https://github.com/stepbrobd"
           target="_blank"
@@ -42,36 +43,38 @@ const Footer = () => {
           <IconBrandGithub size={20} />
         </a>
         <a
-          href="https://twitter.com/stepbrobd"
+          href="https://discordapp.com/users/664337668842192899"
           target="_blank"
           className="inline-block"
-          aria-label="Twitter"
+          aria-label="Discord"
         >
-          <IconBrandTwitter size={20} />
+          <IconBrandDiscord size={20} />
         </a>
         <a
-          href="https://www.threads.net/@stepbrobd"
+          href="https://x.com/stepbrobd"
+          target="_blank"
+          className="inline-block"
+          aria-label="X"
+        >
+          <IconBrandX size={20} />
+        </a>
+        <a
+          href="https://threads.net/@stepbrobd"
           target="_blank"
           className="inline-block"
           aria-label="Threads"
         >
           <IconBrandThreads size={20} />
         </a>
+        <a
+          href="https://youtube.com/@stepbrobd"
+          target="_blank"
+          className="inline-block"
+          aria-label="YouTube"
+        >
+          <IconBrandYoutube size={20} />
+        </a>
       </div>
-
-      <a
-        className="flex h-5 items-center justify-center"
-        href="https://creativecommons.org/licenses/by-nc/4.0/"
-        rel="noopener noreferrer"
-        target="_blank"
-        aria-label="CC BY-NC 4.0"
-      >
-        <div className="flex flex-row space-x-3">
-          <IconCreativeCommons size={20} />
-          <IconCreativeCommonsBy size={20} />
-          <IconCreativeCommonsNc size={20} />
-        </div>
-      </a>
     </div>
   );
 };

@@ -48,7 +48,7 @@ const Logo = ({
         />
         {StepBroBD && (
           <div
-            className={`${sizes[size].text} whitespace-nowrap font-bold tracking-tight`}
+            className={`${sizes[size].text} dark:text-neutral-200 text-neutral-800 whitespace-nowrap font-bold tracking-tight`}
           >
             StepBroBD, Inc.
           </div>
