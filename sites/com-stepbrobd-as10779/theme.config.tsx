@@ -1,7 +1,6 @@
 import Footer from "components/footer";
 import Logo from "components/logo";
-import { useRouter } from "next/router";
-import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
+import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
   darkMode: true,
@@ -44,28 +43,20 @@ const config: DocsThemeConfig = {
     component: () => <></>,
   },
 
-  logo: <Logo StepBroBD size="small" />,
+  logo: <Logo />,
   logoLink: false,
 
   useNextSeoProps() {
     return {
-      titleTemplate: "%s – AS10779 - StepBroBD, Inc.",
+      titleTemplate: "AS10779 - StepBroBD, Inc.",
     };
   },
 
   head: function useHead() {
-    const { frontMatter } = useConfig();
-    const { asPath, defaultLocale, locale } = useRouter();
-
-    const title =
-      `${frontMatter.title} - AS10779 - StepBroBD, Inc.` ||
-      "AS10779 - StepBroBD, Inc.";
-    const url =
-      "https://as10779.net" +
-      (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
+    const title = "AS10779 - StepBroBD, Inc.";
+    const url = "https://as10779.net";
     const description =
-      frontMatter.description ||
-      "AS10779, an autonomous system operated by StepBroBD, Inc. under ARIN. This site contains StepBroBD. Inc.'s policy about it's network, including peering, routing, and more.";
+      "AS10779, an autonomous system operated by StepBroBD, Inc. under ARIN. This page contains StepBroBD. Inc.'s policy about it's network, including peering, routing, and more.";
 
     return (
       <>
@@ -88,32 +79,19 @@ const config: DocsThemeConfig = {
           sizes="96x96"
           href="/favicons/favicon-96x96.png"
         />
-
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={url} />
         <meta property="twitter:card" content="summary_large_image" />
-
         <meta property="og:title" content={title} />
         <meta property="twitter:title" content={title} />
-
         <meta property="description" content={description} />
         <meta property="og:description" content={description} />
         <meta property="twitter:description" content={description} />
-
-        <meta
-          property="og:image"
-          content={`https://as10779.net/api/og?text=${frontMatter.title.replaceAll(
-            " ",
-            "%20",
-          )}`}
-        />
+        <meta property="og:image" content="https://as10779.net/assets/og.png" />
         <meta
           property="twitter:image"
-          content={`https://as10779.net/api/og?text=${frontMatter.title.replaceAll(
-            " ",
-            "%20",
-          )}`}
+          content="https://as10779.net/assets/og.png"
         />
       </>
     );

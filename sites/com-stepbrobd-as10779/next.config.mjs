@@ -23,6 +23,16 @@ const nextConfig = {
     locales: ["en-US"],
     defaultLocale: "en-US",
   },
+
+  async redirects() {
+    return [
+      {
+        permanent: true,
+        source: "/:path(\\w+)",
+        destination: "/#:path",
+      },
+    ];
+  },
 };
 
 export default withNextra(nextConfig);
