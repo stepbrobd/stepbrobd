@@ -112,85 +112,6 @@ importers:
         specifier: ^5.2.2
         version: 5.2.2
 
-  sites/com-stepbrobd-as10779:
-    dependencies:
-      '@tabler/icons-react':
-        specifier: ^2.34.0
-        version: 2.34.0(react@18.2.0)
-      '@vercel/analytics':
-        specifier: ^1.0.2
-        version: 1.0.2
-      '@vercel/og':
-        specifier: ^0.5.13
-        version: 0.5.13
-      com-stepbrobd-ui:
-        specifier: workspace:*
-        version: link:../../packages/com-stepbrobd-ui
-      next:
-        specifier: ^13.4.19
-        version: 13.4.19(react-dom@18.2.0)(react@18.2.0)
-      nextra:
-        specifier: ^2.12.3
-        version: 2.12.3(next@13.4.19)(react-dom@18.2.0)(react@18.2.0)
-      nextra-theme-docs:
-        specifier: ^2.12.3
-        version: 2.12.3(next@13.4.19)(nextra@2.12.3)(react-dom@18.2.0)(react@18.2.0)
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-    devDependencies:
-      '@types/node':
-        specifier: 20.6.0
-        version: 20.6.0
-      '@types/react':
-        specifier: ^18.2.21
-        version: 18.2.21
-      autoprefixer:
-        specifier: ^10.4.15
-        version: 10.4.15(postcss@8.4.29)
-      com-stepbrobd-eslint:
-        specifier: workspace:*
-        version: link:../../packages/com-stepbrobd-eslint
-      com-stepbrobd-prettier:
-        specifier: workspace:*
-        version: link:../../packages/com-stepbrobd-prettier
-      com-stepbrobd-tailwind:
-        specifier: workspace:*
-        version: link:../../packages/com-stepbrobd-tailwind
-      com-stepbrobd-tsconfig:
-        specifier: workspace:*
-        version: link:../../packages/com-stepbrobd-tsconfig
-      eslint:
-        specifier: ^8.49.0
-        version: 8.49.0
-      eslint-config-next:
-        specifier: ^13.4.19
-        version: 13.4.19(eslint@8.49.0)(typescript@5.2.2)
-      eslint-config-prettier:
-        specifier: ^9.0.0
-        version: 9.0.0(eslint@8.49.0)
-      eslint-plugin-simple-import-sort:
-        specifier: ^10.0.0
-        version: 10.0.0(eslint@8.49.0)
-      postcss:
-        specifier: ^8.4.29
-        version: 8.4.29
-      prettier:
-        specifier: ^3.0.3
-        version: 3.0.3
-      prettier-plugin-tailwindcss:
-        specifier: ^0.5.4
-        version: 0.5.4(prettier@3.0.3)
-      tailwindcss:
-        specifier: ^3.3.3
-        version: 3.3.3
-      typescript:
-        specifier: 5.2.2
-        version: 5.2.2
-
   sites/com-stepbrobd-web:
     dependencies:
       '@mdx-js/loader':
@@ -277,6 +198,85 @@ importers:
         version: 3.3.3
       typescript:
         specifier: ^5.2.2
+        version: 5.2.2
+
+  sites/net-as10779-web:
+    dependencies:
+      '@tabler/icons-react':
+        specifier: ^2.34.0
+        version: 2.34.0(react@18.2.0)
+      '@vercel/analytics':
+        specifier: ^1.0.2
+        version: 1.0.2
+      '@vercel/og':
+        specifier: ^0.5.13
+        version: 0.5.13
+      com-stepbrobd-ui:
+        specifier: workspace:*
+        version: link:../../packages/com-stepbrobd-ui
+      next:
+        specifier: ^13.4.19
+        version: 13.4.19(react-dom@18.2.0)(react@18.2.0)
+      nextra:
+        specifier: ^2.12.3
+        version: 2.12.3(next@13.4.19)(react-dom@18.2.0)(react@18.2.0)
+      nextra-theme-docs:
+        specifier: ^2.12.3
+        version: 2.12.3(next@13.4.19)(nextra@2.12.3)(react-dom@18.2.0)(react@18.2.0)
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@types/node':
+        specifier: 20.6.0
+        version: 20.6.0
+      '@types/react':
+        specifier: ^18.2.21
+        version: 18.2.21
+      autoprefixer:
+        specifier: ^10.4.15
+        version: 10.4.15(postcss@8.4.29)
+      com-stepbrobd-eslint:
+        specifier: workspace:*
+        version: link:../../packages/com-stepbrobd-eslint
+      com-stepbrobd-prettier:
+        specifier: workspace:*
+        version: link:../../packages/com-stepbrobd-prettier
+      com-stepbrobd-tailwind:
+        specifier: workspace:*
+        version: link:../../packages/com-stepbrobd-tailwind
+      com-stepbrobd-tsconfig:
+        specifier: workspace:*
+        version: link:../../packages/com-stepbrobd-tsconfig
+      eslint:
+        specifier: ^8.49.0
+        version: 8.49.0
+      eslint-config-next:
+        specifier: ^13.4.19
+        version: 13.4.19(eslint@8.49.0)(typescript@5.2.2)
+      eslint-config-prettier:
+        specifier: ^9.0.0
+        version: 9.0.0(eslint@8.49.0)
+      eslint-plugin-simple-import-sort:
+        specifier: ^10.0.0
+        version: 10.0.0(eslint@8.49.0)
+      postcss:
+        specifier: ^8.4.29
+        version: 8.4.29
+      prettier:
+        specifier: ^3.0.3
+        version: 3.0.3
+      prettier-plugin-tailwindcss:
+        specifier: ^0.5.4
+        version: 0.5.4(prettier@3.0.3)
+      tailwindcss:
+        specifier: ^3.3.3
+        version: 3.3.3
+      typescript:
+        specifier: 5.2.2
         version: 5.2.2
 
 packages:

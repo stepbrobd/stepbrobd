@@ -1,5 +1,5 @@
 {
-    "name": "com-stepbrobd-as10779",
+    "name": "net-as10779-web",
     "private": true,
     "scripts": {
         "dev": "next dev",
