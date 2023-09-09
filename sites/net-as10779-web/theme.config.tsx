@@ -88,10 +88,10 @@ const config: DocsThemeConfig = {
         <meta property="description" content={description} />
         <meta property="og:description" content={description} />
         <meta property="twitter:description" content={description} />
-        <meta property="og:image" content="https://as10779.net/assets/og.png" />
+        <meta property="og:image" content="https://as10779.net/assets/og.webp" />
         <meta
           property="twitter:image"
-          content="https://as10779.net/assets/og.png"
+          content="https://as10779.net/assets/og.webp"
         />
       </>
     );
