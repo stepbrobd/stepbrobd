@@ -48,12 +48,12 @@ const config: DocsThemeConfig = {
 
   useNextSeoProps() {
     return {
-      titleTemplate: "AS10779 - StepBroBD, Inc.",
+      titleTemplate: "AS10779 | StepBroBD, Inc.",
     };
   },
 
   head: function useHead() {
-    const title = "AS10779 - StepBroBD, Inc.";
+    const title = "AS10779 | StepBroBD, Inc.";
     const url = "https://as10779.net";
     const description =
       "AS10779, an autonomous system operated by StepBroBD, Inc. under ARIN. This page contains StepBroBD. Inc.'s policy about it's network, including peering, routing, and more.";
