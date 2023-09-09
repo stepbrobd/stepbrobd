@@ -9,7 +9,7 @@
         "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,mdx}\""
     },
     "dependencies": {
-        "@tabler/icons-react": "^2.32.0",
+        "@tabler/icons-react": "^2.34.0",
         "@vercel/analytics": "^1.0.2",
         "@vercel/og": "^0.5.13",
         "com-stepbrobd-ui": "workspace:*",
@@ -20,14 +20,14 @@
         "react-dom": "^18.2.0"
     },
     "devDependencies": {
-        "@types/node": "20.5.9",
+        "@types/node": "20.6.0",
         "@types/react": "^18.2.21",
         "autoprefixer": "^10.4.15",
         "com-stepbrobd-eslint": "workspace:*",
         "com-stepbrobd-prettier": "workspace:*",
         "com-stepbrobd-tailwind": "workspace:*",
         "com-stepbrobd-tsconfig": "workspace:*",
-        "eslint": "^8.48.0",
+        "eslint": "^8.49.0",
         "eslint-config-next": "^13.4.19",
         "eslint-config-prettier": "^9.0.0",
         "eslint-plugin-simple-import-sort": "^10.0.0",
