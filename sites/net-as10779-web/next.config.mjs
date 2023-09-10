@@ -19,6 +19,8 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
 
+  trailingSlash: false,
+
   i18n: {
     locales: ["en-US"],
     defaultLocale: "en-US",
@@ -28,8 +30,28 @@ const nextConfig = {
     return [
       {
         permanent: true,
-        source: "/:path((?!geofeed$).*)",
-        destination: "/#:path",
+        source: "/about",
+        destination: "/#about",
+      },
+      {
+        permanent: true,
+        source: "/peering",
+        destination: "/#peering",
+      },
+      {
+        permanent: true,
+        source: "/transparency",
+        destination: "/#transparency",
+      },
+      {
+        permanent: true,
+        source: "/geolocation",
+        destination: "/#geolocation",
+      },
+      {
+        permanent: true,
+        source: "/contact",
+        destination: "/#contact",
       },
     ];
   },
