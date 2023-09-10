@@ -24,6 +24,37 @@ Peers should meet the following criteria:
 - The use of a mutually agreed BGP session password is encouraged but not required.
 - All announced routes must be covered by a valid Route Origin Authorization.
 
+## Geofeed
+
+import { useData } from "nextra/data";
+
+export const getStaticProps = ({ params }) => {
+  return fetch("https://as10779.net/geofeed")
+    .then((res) => res.text())
+    .then((text) => {
+      return {
+        props: {
+          ssg: { geofeed: text },
+        },
+        revalidate: 86400,
+      };
+    });
+};
+
+export const Geofeed = () => {
+  const { geofeed } = useData();
+  return (
+    <pre hasCopyCode data-language="csv">
+      {geofeed}
+    </pre>
+  );
+};
+
+Our IP Geolocation Feed conforms to the [RFC 8805](https://tools.ietf.org/html/rfc8805) standard,
+and it's updated every 24 hours, you can find the latest version at [https://as10779.net/geofeed](https://as10779.net/geofeed).
+
+<Geofeed />
+
 ## Transparency
 
 Our routing program is running on a [Vultr](https://www.vultr.com) VPS, we do not have any physical infrastructure.

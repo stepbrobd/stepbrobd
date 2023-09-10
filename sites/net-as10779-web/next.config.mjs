@@ -28,7 +28,7 @@ const nextConfig = {
     return [
       {
         permanent: true,
-        source: "/:path(\\w+)",
+        source: "/:path((?!geofeed$).*)",
         destination: "/#:path",
       },
     ];
