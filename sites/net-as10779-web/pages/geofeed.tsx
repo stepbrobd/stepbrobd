@@ -22,8 +22,7 @@ const data = [
 export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   if (res) {
     res.setHeader("Content-Type", "text/csv");
-    res.write(`# AS10779 - RFC 8805 IP Geolocation Feeds
-# Prefix, Country Code, Region Code, City, Postal
+    res.write(`
 ${data
   .map((d) => `${d.prefix},${d.country},${d.region},${d.city},${d.postal}`)
   .join("\n")}`);
