@@ -22,10 +22,13 @@ const data = [
 export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   if (res) {
     res.setHeader("Content-Type", "text/csv");
-    res.write(`
-${data
-  .map((d) => `${d.prefix},${d.country},${d.region},${d.city},${d.postal}`)
-  .join("\n")}`);
+    res.write(
+      `${data
+        .map(
+          (d) => `${d.prefix},${d.country},${d.region},${d.city},${d.postal}`,
+        )
+        .join("\n")}`,
+    );
     res.end();
   }
   return {
