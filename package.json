@@ -11,7 +11,7 @@
     "com-stepbrobd-prettier": "workspace:*",
     "eslint": "^8.49.0",
     "prettier": "^3.0.3",
-    "turbo": "^1.10.13"
+    "turbo": "^1.10.14"
   },
   "packageManager": "pnpm@7.15.0"
 }
