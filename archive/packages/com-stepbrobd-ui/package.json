@@ -1,0 +1,39 @@
+{
+  "name": "com-stepbrobd-ui",
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "lint": "eslint --fix \"**/*.ts*\"",
+    "format": "prettier --write \"**/*.ts*\""
+  },
+  "types": "./dist/index.d.mts",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": "./dist",
+    "./tailwind.css": "./dist/index.css"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/lodash.kebabcase": "^4.1.7",
+    "@types/react": "^18.2.22",
+    "@types/react-dom": "^18.2.7",
+    "autoprefixer": "^10.4.15",
+    "com-stepbrobd-eslint": "workspace:*",
+    "com-stepbrobd-prettier": "workspace:*",
+    "com-stepbrobd-tailwind": "workspace:*",
+    "com-stepbrobd-tsconfig": "workspace:*",
+    "postcss": "^8.4.30",
+    "react": "^18.2.0",
+    "tailwindcss": "^3.3.3",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "lodash.kebabcase": "^4.1.1",
+    "react-wrap-balancer": "^1.1.0"
+  }
+}

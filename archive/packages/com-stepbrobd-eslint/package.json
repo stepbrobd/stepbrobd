@@ -1,0 +1,16 @@
+{
+  "name": "com-stepbrobd-eslint",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "eslint-config-next": "^13.5.1",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-turbo": "^1.10.14",
+    "eslint-mdx": "^2.2.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-simple-import-sort": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.2"
+  }
+}

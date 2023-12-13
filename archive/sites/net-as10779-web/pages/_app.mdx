@@ -1,0 +1,50 @@
+import "styles/tailwind.css";
+
+import { Analytics } from "@vercel/analytics/react";
+import { Inter, JetBrains_Mono, Tinos } from "next/font/google";
+import Script from "next/script";
+
+export const serif = Tinos({
+  preload: true,
+  weight: ["400", "700"],
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-tinos",
+  display: "swap",
+});
+export const sans = Inter({
+  preload: true,
+  weight: ["400", "700"],
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-inter",
+  display: "swap",
+});
+export const mono = JetBrains_Mono({
+  preload: true,
+  weight: ["400", "700"],
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-jetbrains-mono",
+  display: "swap",
+});
+
+export default function App({ Component, pageProps }) {
+    return (
+        <>
+            <main
+                className={`${mono.variable} ${sans.variable} ${serif.variable} selection:bg-[#aaffec] dark:selection:bg-[#f81ce5]`}
+            >
+                <Component {...pageProps} />
+            </main>
+            <Analytics />
+            <Script
+                id="plausible-analytics"
+                strategy="lazyOnload"
+                data-domain="as10779.net"
+                src="https://plausible.io/js/script.js"
+            />
+            <Script id="heap-analytics" strategy="lazyOnload">
+                {`window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};heap.load("3772043328");`}
+            </Script>
+        </>
+    );
+
+}
