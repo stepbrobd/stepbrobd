@@ -1,8 +1,0 @@
-{
-  "name": "com-stepbrobd-prettier",
-  "private": true,
-  "main": "index.js",
-  "dependencies": {
-    "prettier-plugin-tailwindcss": "^0.5.4"
-  }
-}

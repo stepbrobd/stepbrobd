@@ -1,8 +1,0 @@
-{
-    "extends": "com-stepbrobd-tsconfig/library.json",
-    "include": ["."],
-    "exclude": ["dist", "build", "node_modules"],
-    "compilerOptions": {
-        "baseUrl": "."
-    }
-}

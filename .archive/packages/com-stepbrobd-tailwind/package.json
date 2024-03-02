@@ -1,8 +1,0 @@
-{
-  "name": "com-stepbrobd-tailwind",
-  "private": true,
-  "main": "index.js",
-  "devDependencies": {
-    "tailwindcss": "^3.3.3"
-  }
-}
